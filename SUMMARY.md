@@ -5,3 +5,4 @@
 ## Front-End
 
 * [Figma](front-end/figma.md)
+* [HTML](front-end/html.md)
