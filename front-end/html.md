@@ -36,7 +36,7 @@ icon: html5
 <h6>h1 태그 &nbsp; &nbsp; &nbsp;입니다!</h6>
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 줄 바꿈
 
@@ -62,7 +62,7 @@ icon: html5
 <hr>
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### 그 밖에 텍스트를 다루는 태그들
 
@@ -94,7 +94,7 @@ icon: html5
 &#x3C;/p>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -114,7 +114,7 @@ icon: html5
 </ul>
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### 순서 있는 목록 태그
 
@@ -170,7 +170,7 @@ icon: html5
 </ol>
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -187,7 +187,7 @@ icon: html5
 </dl>
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -216,14 +216,14 @@ icon: html5
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 
 
 {% hint style="success" %}
 example
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (13).png>)
 
 ```html
 <table border="1">
@@ -280,7 +280,7 @@ example
 ```
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### 테이블 태그의 구조 설정
 
@@ -320,7 +320,7 @@ example
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -328,4 +328,4 @@ example
 목록, 표 모두 수식을 이용해 쉽게 구조를 만들 수 있다.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
