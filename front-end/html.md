@@ -36,7 +36,7 @@ icon: html5
 <h6>h1 태그 &nbsp; &nbsp; &nbsp;입니다!</h6>
 ```
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### 줄 바꿈
 
@@ -62,7 +62,7 @@ icon: html5
 <hr>
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### 그 밖에 텍스트를 다루는 태그들
 
@@ -94,7 +94,7 @@ icon: html5
 &#x3C;/p>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -114,7 +114,7 @@ icon: html5
 </ul>
 ```
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### 순서 있는 목록 태그
 
@@ -170,7 +170,7 @@ icon: html5
 </ol>
 ```
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -187,7 +187,7 @@ icon: html5
 </dl>
 ```
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -216,14 +216,14 @@ icon: html5
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 
 
 {% hint style="success" %}
 example
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 ```html
 <table border="1">
@@ -280,7 +280,7 @@ example
 ```
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ### 테이블 태그의 구조 설정
 
@@ -320,7 +320,7 @@ example
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -328,4 +328,249 @@ example
 목록, 표 모두 수식을 이용해 쉽게 구조를 만들 수 있다.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 영역 관련 태그
+
+### 영역을 구분하는 태그
+
+```html
+<div> : 줄 바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역이 설정됨 (블럭요소)
+<span> : 줄 바꿈이 적용되지 않아 옆으로 영역이 붙음 (인라인 요소)
+<p> : 문단 영역을 지정하는 태그(블럭 요소)
+<pre> : 입력란대로 문단 영역을 저장하는 태그(블럭 요소)
+```
+
+
+
+### div 태그와 span 태그의 영역
+
+#### div 영역
+
+```html
+<div style="background-color: yellow;">새가 봄바람을 인생을 듣기만 우리 힘있다. 같이, 지혜는 우리는 속에 것은 가슴에 오아이스도 끓는 피어나는 약동하다. 위하여 그들은 일월과 인도하겠다는 방지하는 주며, 
+        쓸쓸한 사막이다. 살았으며, 위하여 싶이 천지는 피어나기 끓는 있는 지혜는 뿐이다. 이것을 인생에 어디 품었기 철환하였는가? 꽃 미인을 가지에 쓸쓸한 것이다. 거친 방황하여도, 있는 위하여, 
+        철환하였는가? 작고 우리 우리 원대하고, 어디 위하여서. 청춘의 황금시대를 오아이스도 끝까지 장식하는 두손을 철환하였는가? 동력은 현저하게 따뜻한 사랑의 이것은 듣는다. 새가 하였으며, 끓는 되는 철환하였는가?</div>
+
+```
+
+#### span 영역
+
+```html
+<span style="background-color: cyan;">새가 봄바람을 인생을 듣기만 우리 힘있다. 같이, 지혜는 우리는 속에 것은 가슴에 오아이스도 끓는 피어나는 약동하다. 위하여 그들은 일월과 인도하겠다는 방지하는 주며, 
+        쓸쓸한 사막이다. 살았으며, 위하여 싶이 천지는 피어나기 끓는 있는 지혜는 뿐이다. 이것을 인생에 어디 품었기 철환하였는가? 꽃 미인을 가지에 쓸쓸한 것이다. 거친 방황하여도, 있는 위하여, 
+        철환하였는가? 작고 우리 우리 원대하고, 어디 위하여서. 청춘의 황금시대를 오아이스도 끝까지 장식하는 두손을 철환하였는가? 동력은 현저하게 따뜻한 사랑의 이것은 듣는다. 새가 하였으며, 끓는 되는 철환하였는가?</span>
+```
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## 이미지 관련 태그
+
+```html
+<img src="sample/image/flower3.PNG">
+```
+
+### 자주 사용하는 속성들
+
+#### alt 속성
+
+```html
+<img src="sample/image/river1.PNG" alt="river1의 사진">
+```
+
+{% hint style="success" %}
+사진의 경로가 잘못되거나 이미지를 제대로 표현할 수 없을 경우 대체 텍스트의 용도로 사용 가능하다.
+{% endhint %}
+
+#### width와  height의 속성
+
+&#x20;사진의 높이와 너비를 지정할 수있다.
+
+&#x20;✅고정 크기 단위 : 화면 사이즈가 줄어도 크기 변화 X
+
+```html
+<img src="sample/image/flower1.PNG" width="200px" height="150px">
+```
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;✅가변 크기 단위 : 화면 사이즈 혹은 기준이 사이즈에 따라 크기 변경
+
+```html
+<img src="sample/image/flower1.PNG" width="15%" height="150px">
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 미디어 관련 태그
+
+### 오디오 관련 태그
+
+```html
+<audio src="sample/audio/major.mp3" controls="controls" loop="loop"></audio>
+```
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### 비디오 관련 태그
+
+```html
+<video src="sample/video/video1.mp4" controls="controls"></video>
+```
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 하이퍼링크 관련 태그
+
+{% hint style="info" %}
+링크 기능은 웹 문서가 다른 문서와 구분되는 가장 핵심적인 기능!
+
+클릭을 통해 연결된 곳으로 이동하여 사용을 편리하게 해주는 기능이다.
+
+텍스트를 클릭해 링크를 이동하는 방법, 이미지를 클릭해 링크를 이동하는 방법이 있다.
+
+페이지 내에서의 링크를 통한 이동도 가능하다.
+{% endhint %}
+
+### a 태그를 이용한 하이퍼링크
+
+```
+<ul>
+        <li><a href="1_글자관련태그.html">글자 관련 태그</a></li>
+        <li><a href="2_목록관련태그.html">목록 관련 태그</a></li>
+        <li><a href="3_표관련태그.html">표 관련 태그</a></li>
+        <li><a href="4_영역관련태그.html">영역 관련 태그</a></li>
+        <li><a href="5_이미지관련태그.html">이미지 관련 태그</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="https://www.naver.com" target="_self">네이버</a></li> <!--기존페이지에서 새로고침-->
+        <li><a href="https://www.google.com" target="_blank">구글</a></li> <!--새 탭이 열림-->
+    </ul>
+
+    <a href="https://www.w3schools.com" target="_blank">
+        <img src="sample/image/city1.PNG" width="150px" height="100px">
+    </a>
+```
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### 한 페이지 내에서 점프하는 앵커
+
+<pre class="language-html"><code class="lang-html"><strong>&#x3C;h3 id="menu">한 페이지 내에서 점프하는 앵커 만들기&#x3C;/h3>
+</strong>    &#x3C;ul>
+        &#x3C;li>&#x3C;a href="#content1">본문내용1&#x3C;/a>&#x3C;/li>
+        &#x3C;li>&#x3C;a href="#content2">본문내용2&#x3C;/a>&#x3C;/li>
+        &#x3C;li>&#x3C;a href="#content3">본문내용3&#x3C;/a>&#x3C;/li>
+    &#x3C;/ul>
+
+
+    &#x3C;h4 id="content1">본문내용1&#x3C;/h4>
+    &#x3C;pre> What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        
+        
+        Where does it come from?
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        
+        Where can I get some?
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    &#x3C;/pre>
+    &#x3C;a href="#menu">메뉴로 돌아가기&#x3C;/a>
+</code></pre>
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 폼 관련 태그
+
+form 태그는 html 사용자가 입력할 수 있는 양식을 제공하는 태그이다.\
+form 태그 내의 input 태그들을 통해 사용자가 입력한 정보를 서버로 넘기는 역할을 한다
+
+* **action 속성** : 폼의 입력된 값들을 <mark style="background-color:blue;">전송 받을 서버의 클래스명</mark>을 입력한다.-
+* **method 속성** : <mark style="background-color:green;">get / post</mark> 방식으로 전송 방식을 지정한다. (get 방식은 url 주소에 form 태그를 통해 넘어가는 데이터가 보임) (post 방식은 url 주소에 form 태그를 통해 넘어가는 데이터가 보이지 않음)
+
+```html
+<form action="search" method="post">
+        <label>검색할 내용: </label><input type="text" name="search">
+        <button type="submit">검색</button>
+
+</form>
+```
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+submit 버튼을 눌렀을 때, action에 지정한 경로로 method를 지정한 방식에 따라 input 태그에 입력한 값들을 전달한다.
+{% endhint %}
+
+
+
+### fieldset과 legend
+
+```html
+<form>
+        <fieldset>
+            <legend>필드셋의 제목을 작성하는 부분이다.</legend>
+            <label>입력1: </label><input type="text" value="사과"><br>
+            <label>입력2: </label><input type="text"><br>
+            <label>입력3: </label><input type="text"><br>
+        </fieldset>
+        <fieldset>
+            <legend>필드셋으로 묶은 영역별로 구분된다.</legend>
+            <label>입력1: </label><input type="text" value="사과"><br>
+            <label>입력2: </label><input type="text"><br>
+            <label>입력3: </label><input type="text"><br>
+        </fieldset>
+</form>
+```
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+### 다양한 종류의 input 태그들 type별로 확인하기
+
+```html
+<form action="#" method="post">
+        <h2>text와 관련된 input 태그</h2>
+        <h3>type="text"</h3>
+        <p>한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자이다.</p>
+        <label for="userid2">아이디: </label>
+        <input type="text" id="userid2" name="userid" size="60"
+        placeholder="아이디를 입력하세요" value = "user01" autofocus>
+
+        <h3>type="password</h3>
+        <p>비밀번호를 입력할 수 있는 텍스트 상자이다.</p>
+        <label for="userpassword2">비밀번호</label>
+        <input type="password" id="userpassword2" name="userPwD" size="40" placeholder="비밀번호를 입력하세요."><br>
+    
+        <br>
+        <h3>type="search",type="url",type="email",type="tel"</h3>
+        <p>겉모습은 type="text"와 비슷하지만 각각의 정보에 맞게 분화된 기능을 제공하는 텍스트 상자이다.</p>
+        <label>검색: </label>
+        <input type="search" name="searchtext" placeholder="검색할 내용 입력"><br>
+        <label>홈페이지: </label>
+        <input type="url" name="homepage" value = "https://"><br>
+        <label>이메일: </label>
+        <input type="email" name="email" placeholder="이메일을 입력하세요."><br>
+        <label>전화번호: </label>
+        <input type="tel" name="phone" placeholder="전화번호를 입력하세요." >
+        <br>
+
+        <input type="submit" value="전송"> <!--버튼이지만 데이터를 전달 가능-->
+        <input type="reset" value="취소">
+```
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
