@@ -4,7 +4,7 @@ icon: html5
 
 # HTML
 
-## HTML 기본 틀
+## 🔲HTML 기본 틀
 
 ```html
 <!DOCTYPE html>
@@ -21,9 +21,9 @@ icon: html5
 </html>
 ```
 
-## 글자 관련 태그
+## 🅰️글자 관련 태그
 
-### 글꼴 크기
+### - 글꼴 크기
 
 ```html
 <h1></h1>
@@ -38,7 +38,7 @@ icon: html5
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-### 줄 바꿈
+### - 줄 바꿈
 
 ```html
 <!--줄 바꿈 태그-->
@@ -64,7 +64,7 @@ icon: html5
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-### 그 밖에 텍스트를 다루는 태그들
+### - 그 밖에 텍스트를 다루는 태그들
 
 <pre class="language-html"><code class="lang-html"><strong>&#x3C;!--기타 관련 글자 태그-->
 </strong>&#x3C;h3> 그 밖에 텍스트를 다루는 태그들&#x3C;/h3>
@@ -98,9 +98,9 @@ icon: html5
 
 
 
-## 목록 관련 태그들
+## 🧾목록 관련 태그들
 
-### 순서 없는 목록 태그
+### - 순서 없는 목록 태그
 
 ```html
 
@@ -116,7 +116,7 @@ icon: html5
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-### 순서 있는 목록 태그
+### - 순서 있는 목록 태그
 
 ```html
 <h1>순서 있는 목록 태그</h1>
@@ -174,7 +174,7 @@ icon: html5
 
 
 
-### 설명 목록 태그
+### - 설명 목록 태그
 
 ```
 
@@ -191,9 +191,9 @@ icon: html5
 
 
 
-## 표 관련 태그
+## 🥅표 관련 태그
 
-### 기본적인 표 만들기
+### - 기본적인 표 만들기
 
 ```html
 <h1>기본적인 표 만들기</h1>
@@ -282,7 +282,7 @@ example
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-### 테이블 태그의 구조 설정
+### - 테이블 태그의 구조 설정
 
 ```
 <h2>테이블 태그의 구조 설정</h2>
@@ -332,9 +332,9 @@ example
 
 
 
-## 영역 관련 태그
+## 🪧영역 관련 태그
 
-### 영역을 구분하는 태그
+### - 영역을 구분하는 태그
 
 ```html
 <div> : 줄 바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역이 설정됨 (블럭요소)
@@ -345,7 +345,7 @@ example
 
 
 
-### div 태그와 span 태그의 영역
+### - div 태그와 span 태그의 영역
 
 #### div 영역
 
@@ -366,15 +366,15 @@ example
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-## 이미지 관련 태그
+## 🖼️이미지 관련 태그
 
 ```html
 <img src="sample/image/flower3.PNG">
 ```
 
-### 자주 사용하는 속성들
+### 🔖<mark style="color:red;">자주 사용하는 속성들</mark>
 
-#### alt 속성
+#### <mark style="background-color:blue;">alt 속성</mark>
 
 ```html
 <img src="sample/image/river1.PNG" alt="river1의 사진">
@@ -384,7 +384,7 @@ example
 사진의 경로가 잘못되거나 이미지를 제대로 표현할 수 없을 경우 대체 텍스트의 용도로 사용 가능하다.
 {% endhint %}
 
-#### width와  height의 속성
+#### <mark style="background-color:blue;">width와  height의 속성</mark>
 
 &#x20;사진의 높이와 너비를 지정할 수있다.
 
@@ -406,9 +406,9 @@ example
 
 
 
-## 미디어 관련 태그
+## 🎬 미디어 관련 태그
 
-### 오디오 관련 태그
+### - 🔊오디오 관련 태그
 
 ```html
 <audio src="sample/audio/major.mp3" controls="controls" loop="loop"></audio>
@@ -416,7 +416,7 @@ example
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-### 비디오 관련 태그
+### - 📼 비디오 관련 태그
 
 ```html
 <video src="sample/video/video1.mp4" controls="controls"></video>
@@ -426,7 +426,7 @@ example
 
 
 
-## 하이퍼링크 관련 태그
+## 🔗하이퍼링크 관련 태그
 
 {% hint style="info" %}
 링크 기능은 웹 문서가 다른 문서와 구분되는 가장 핵심적인 기능!
@@ -438,7 +438,7 @@ example
 페이지 내에서의 링크를 통한 이동도 가능하다.
 {% endhint %}
 
-### a 태그를 이용한 하이퍼링크
+### - <mark style="background-color:red;">a 태그</mark>를 이용한 하이퍼링크
 
 ```
 <ul>
@@ -461,7 +461,7 @@ example
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-### 한 페이지 내에서 점프하는 앵커
+### - 한 페이지 내에서 점프하는 앵커
 
 <pre class="language-html"><code class="lang-html"><strong>&#x3C;h3 id="menu">한 페이지 내에서 점프하는 앵커 만들기&#x3C;/h3>
 </strong>    &#x3C;ul>
@@ -494,10 +494,10 @@ example
 
 
 
-## 폼 관련 태그
+## 📦폼 관련 태그
 
-form 태그는 html 사용자가 입력할 수 있는 양식을 제공하는 태그이다.\
-form 태그 내의 input 태그들을 통해 사용자가 입력한 정보를 서버로 넘기는 역할을 한다
+form 태그는 html 사용자가 <mark style="background-color:yellow;">입력할 수 있는 양식을 제공</mark>하는 태그이다.\
+form 태그 내의 input 태그들을 통해 **사용자가 입력한 정보를 서버로 넘기는 역할**을 한다
 
 * **action 속성** : 폼의 입력된 값들을 <mark style="background-color:blue;">전송 받을 서버의 클래스명</mark>을 입력한다.-
 * **method 속성** : <mark style="background-color:green;">get / post</mark> 방식으로 전송 방식을 지정한다. (get 방식은 url 주소에 form 태그를 통해 넘어가는 데이터가 보임) (post 방식은 url 주소에 form 태그를 통해 넘어가는 데이터가 보이지 않음)
@@ -506,19 +506,18 @@ form 태그 내의 input 태그들을 통해 사용자가 입력한 정보를 �
 <form action="search" method="post">
         <label>검색할 내용: </label><input type="text" name="search">
         <button type="submit">검색</button>
-
 </form>
 ```
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-submit 버튼을 눌렀을 때, action에 지정한 경로로 method를 지정한 방식에 따라 input 태그에 입력한 값들을 전달한다.
+{% hint style="success" %}
+submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 경로</mark>로 method를 지정한 방식에 따라 <mark style="color:green;">input 태그에 입력한 값들을 전달</mark>한다.
 {% endhint %}
 
 
 
-### fieldset과 legend
+### - fieldset과 legend
 
 ```html
 <form>
@@ -539,38 +538,224 @@ submit 버튼을 눌렀을 때, action에 지정한 경로로 method를 지정�
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-### 다양한 종류의 input 태그들 type별로 확인하기
+### - 다양한 종류의 input 태그들 type별로 확인하기
+
+#### ✅ text와 관련된 input 태그
+
+<mark style="background-color:green;">**type="text"**</mark>
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ```html
-<form action="#" method="post">
-        <h2>text와 관련된 input 태그</h2>
-        <h3>type="text"</h3>
-        <p>한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자이다.</p>
+<p>한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자이다.</p>
         <label for="userid2">아이디: </label>
         <input type="text" id="userid2" name="userid" size="60"
         placeholder="아이디를 입력하세요" value = "user01" autofocus>
-
-        <h3>type="password</h3>
-        <p>비밀번호를 입력할 수 있는 텍스트 상자이다.</p>
-        <label for="userpassword2">비밀번호</label>
-        <input type="password" id="userpassword2" name="userPwD" size="40" placeholder="비밀번호를 입력하세요."><br>
-    
-        <br>
-        <h3>type="search",type="url",type="email",type="tel"</h3>
-        <p>겉모습은 type="text"와 비슷하지만 각각의 정보에 맞게 분화된 기능을 제공하는 텍스트 상자이다.</p>
-        <label>검색: </label>
-        <input type="search" name="searchtext" placeholder="검색할 내용 입력"><br>
-        <label>홈페이지: </label>
-        <input type="url" name="homepage" value = "https://"><br>
-        <label>이메일: </label>
-        <input type="email" name="email" placeholder="이메일을 입력하세요."><br>
-        <label>전화번호: </label>
-        <input type="tel" name="phone" placeholder="전화번호를 입력하세요." >
-        <br>
-
-        <input type="submit" value="전송"> <!--버튼이지만 데이터를 전달 가능-->
-        <input type="reset" value="취소">
 ```
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
+
+<mark style="background-color:green;">**type="password"**</mark>
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<label for="userpassword2">비밀번호</label>
+<input type="password" id="userpassword2" name="userPwD" size="40" placeholder="비밀번호를 입력하세요."><br>
+```
+
+
+
+<mark style="background-color:green;">**type="search"**</mark>
+
+겉모습은 type="text"와 비슷하지만 각각의 정보에 맞게 분화된 기능을 제공하는 텍스트 상자이다.
+
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<label>검색: </label>
+<input type="search" name="searchtext" placeholder="검색할 내용 입력"><br>
+<label>홈페이지: </label>
+<input type="url" name="homepage" value = "https://"><br>
+<label>이메일: </label>
+<input type="email" name="email" placeholder="이메일을 입력하세요."><br>
+<label>전화번호: </label>
+<input type="tel" name="phone" placeholder="전화번호를 입력하세요." >
+```
+
+
+
+#### ✅ 숫자와 관련된 input 태그
+
+<mark style="background-color:green;">**type="number"**</mark>
+
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<label>수량: </label>
+<input type="number" name="amount"min="0" max="100" value="50" step="5"><br>
+```
+
+
+
+<mark style="background-color:green;">**type="range"**</mark>
+
+슬라이드바를 통해 숫자를 지정할 수 있다.
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+```html
+
+<label>점수 :</label>
+<input type="range" name="point" min="0" max="100" value="0" step="10"><br>
+
+<input type="submit" value="전송">
+<input type="reset" value="취소">
+```
+
+
+
+#### <mark style="background-color:green;">날짜/시간 관련된 input 태그</mark>
+
+#### type="date", type="month", type="week", type="time", type="datetime", type="datetime-local"
+
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+<pre class="language-html"><code class="lang-html"><strong>&#x3C;label>date : &#x3C;/label>&#x3C;input type="date" name = "date">&#x3C;br>
+</strong>&#x3C;label>month : &#x3C;/label>&#x3C;input type="month" name = "month">&#x3C;br>
+&#x3C;label>week : &#x3C;/label>&#x3C;input type="week" name = "week">&#x3C;br>
+&#x3C;label>time : &#x3C;/label>&#x3C;input type="time" name = "time">&#x3C;br>
+&#x3C;label>datetime-local : &#x3C;/label>&#x3C;input type="datetime-local" name = "datetime-local">&#x3C;br>
+</code></pre>
+
+
+
+#### ✅ 라디오 버튼(단일선택)과 체크박스(다중선택)
+
+<mark style="background-color:green;">**type="radio"**</mark>
+
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<input id = "male" type="radio" name="gender" value="M" checked>
+<label for="male">남자</label>
+<input id = "female" type="radio" name="gender" value="F">
+<label for="female">여자</label>
+```
+
+{% hint style="success" %}
+라디오 버튼은 <mark style="background-color:yellow;">name</mark>을 일치시켜서 하나의 그룹으로 만들어 하나만 체크되게 하자!
+{% endhint %}
+
+<mark style="background-color:green;">**type="checkbox"**</mark>
+
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<label>취미 :</label>
+<input type="checkbox" id="baseball" name="hobby" value="야구">
+<label for="baseball">야구</label>
+
+<input type="checkbox" id="football" name="hobby" value="축구">
+<label for="football">축구</label>
+
+<input type="checkbox" id="basketball" name="hobby" value="농구">
+<label for="baseball">농구</label>
+```
+
+
+
+#### ✅ 그 밖의 input 태그들
+
+<mark style="background-color:green;">**type="color"**</mark>
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<label for="color">색상 선택 :</label>
+<input type="color" id="color" name="color">
+```
+
+
+
+<mark style="background-color:green;">**type="file"**</mark>
+
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<input type="file" name="uploadfile" multiple>
+```
+
+{% hint style="success" %}
+multiple 옵션을 준 경우에는 파일을 여러개 선택할 수 있다.
+{% endhint %}
+
+
+
+<mark style="background-color:green;">**type="button", type="submit", type="reset"**</mark>
+
+<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+```html
+<input type="button" value="버튼">
+<input type="submit" value="전송">
+<input type="reset" value="초기화">
+<button>버튼2</button>
+```
+
+
+
+### - select 태그와 option 태그
+
+사용자가 내용을 입력하는 것이 아니라 여러 옵션 중에서 선택하게 하고 싶을 때 사용하는 <mark style="background-color:blue;">드롭다운 목록</mark>이다.
+
+<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+<pre class="language-html"><code class="lang-html">&#x3C;label>국적: &#x3C;/label>
+&#x3C;select name="nation">
+    &#x3C;option selected>한국&#x3C;/option>
+    &#x3C;option>중국&#x3C;/option>
+    &#x3C;option>일본&#x3C;/option>
+<strong>    &#x3C;option>미국&#x3C;/option>
+</strong>    &#x3C;option>베트남&#x3C;/option>
+    &#x3C;option>기타&#x3C;/option>
+&#x3C;/select>
+</code></pre>
+
+#### ✅ select 태그의 속성
+
+**size:** listbox의 크기를 지정한다.
+
+**multiple:** 다중 선택이 가능하다.
+
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
+<pre class="language-html"><code class="lang-html">&#x3C;select name="nation2" size="5" multiple>
+    &#x3C;option selected>한국&#x3C;/option>
+    &#x3C;option>중국&#x3C;/option>
+    &#x3C;option>일본&#x3C;/option>
+    &#x3C;option>미국&#x3C;/option>
+    &#x3C;option>베트남&#x3C;/option>
+<strong>    &#x3C;option>기타&#x3C;/option>
+</strong>&#x3C;/select>
+</code></pre>
+
+
+
+### - textarea 태그
+
+input type="text"와 비슷하지만 <mark style="background-color:yellow;">여러 줄을 입력할 수 있</mark>고 새로운 input 태그와 달리 크기 조절이 가능하다.
+
+{% hint style="success" %}
+css 속성 <mark style="color:blue;">resize</mark>로 크기 조절을 고정할 수도 있고, 범위를 벗어나면 스크롤 바가 생긴다.
+
+**style="resize : none;"**&#xC740; 텍스트 박스 크기를 <mark style="background-color:red;">사용자가 조정할 수 없게</mark> 해준다!
+{% endhint %}
+
+```html
+<textarea name="content" cols="30" rows="10"
+style="resize : none;">텍스트 박스 입니다!
+</textarea>
+```
+
+<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
