@@ -9,7 +9,7 @@ icon: paw
 
 <summary>4월</summary>
 
-\[250414]\(front-end/css.md#CSS-기본선택자)
+\[250414]\(front-end/css.md#CSS-선택자)
 
 </details>
 
