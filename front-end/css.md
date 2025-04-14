@@ -4,8 +4,6 @@ icon: css3-alt
 
 # CSS
 
-📅 2025.04.14
-
 ## 1️⃣CSS 선택자
 
 {% hint style="info" %}
