@@ -5,11 +5,3 @@ icon: paw
 
 # Today I Learn
 
-<details>
-
-<summary>4월</summary>
-
-\[250414]\(front-end/css.md#css-선택자)
-
-</details>
-
