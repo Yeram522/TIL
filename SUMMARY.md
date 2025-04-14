@@ -6,3 +6,4 @@
 
 * [Figma](front-end/figma.md)
 * [HTML](front-end/html.md)
+* [CSS](front-end/css.md)
