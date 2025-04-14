@@ -36,7 +36,7 @@ icon: html5
 <h6>h1 태그 &nbsp; &nbsp; &nbsp;입니다!</h6>
 ```
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### - 줄 바꿈
 
@@ -62,7 +62,7 @@ icon: html5
 <hr>
 ```
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### - 그 밖에 텍스트를 다루는 태그들
 
@@ -94,7 +94,7 @@ icon: html5
 &#x3C;/p>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -114,7 +114,7 @@ icon: html5
 </ul>
 ```
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### - 순서 있는 목록 태그
 
@@ -170,7 +170,7 @@ icon: html5
 </ol>
 ```
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -187,7 +187,7 @@ icon: html5
 </dl>
 ```
 
-<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -216,14 +216,14 @@ icon: html5
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 
 
 {% hint style="success" %}
 example
 
-![](<../.gitbook/assets/image (20) (1).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 ```html
 <table border="1">
@@ -280,7 +280,7 @@ example
 ```
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ### - 테이블 태그의 구조 설정
 
@@ -320,7 +320,7 @@ example
 </table>
 ```
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -328,7 +328,7 @@ example
 목록, 표 모두 수식을 이용해 쉽게 구조를 만들 수 있다.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -364,7 +364,7 @@ example
         철환하였는가? 작고 우리 우리 원대하고, 어디 위하여서. 청춘의 황금시대를 오아이스도 끝까지 장식하는 두손을 철환하였는가? 동력은 현저하게 따뜻한 사랑의 이것은 듣는다. 새가 하였으며, 끓는 되는 철환하였는가?</span>
 ```
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## 🖼️이미지 관련 태그
 
@@ -394,7 +394,7 @@ example
 <img src="sample/image/flower1.PNG" width="200px" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;✅가변 크기 단위 : 화면 사이즈 혹은 기준이 사이즈에 따라 크기 변경
 
@@ -402,7 +402,7 @@ example
 <img src="sample/image/flower1.PNG" width="15%" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -414,7 +414,7 @@ example
 <audio src="sample/audio/major.mp3" controls="controls" loop="loop"></audio>
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### - 📼 비디오 관련 태그
 
@@ -422,7 +422,7 @@ example
 <video src="sample/video/video1.mp4" controls="controls"></video>
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -459,7 +459,7 @@ example
     </a>
 ```
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### - 한 페이지 내에서 점프하는 앵커
 
@@ -490,7 +490,7 @@ example
     &#x3C;a href="#menu">메뉴로 돌아가기&#x3C;/a>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -509,7 +509,7 @@ form 태그 내의 input 태그들을 통해 **사용자가 입력한 정보를 
 </form>
 ```
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 경로</mark>로 method를 지정한 방식에 따라 <mark style="color:green;">input 태그에 입력한 값들을 전달</mark>한다.
@@ -536,7 +536,7 @@ submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 �
 </form>
 ```
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### - 다양한 종류의 input 태그들 type별로 확인하기
 
@@ -544,7 +544,7 @@ submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 �
 
 <mark style="background-color:green;">**type="text"**</mark>
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ```html
 <p>한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자이다.</p>
@@ -557,7 +557,7 @@ submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 �
 
 <mark style="background-color:green;">**type="password"**</mark>
 
-<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ```html
 <label for="userpassword2">비밀번호</label>
