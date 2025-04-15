@@ -745,3 +745,327 @@ div{
   &#x3C;li id = "tt4">lowercae : 모든 영문자를 소문자로&#x3C;/li>
 &#x3C;/ul>
 </code></pre>
+
+
+
+## 5️⃣목록 스타일
+
+### - 순서 없는 목록 스타일
+
+#### 채운 원 모양 불렛(기본값)
+
+```css
+#default-bullet{
+        list-style-type: disc;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+
+#### 빈 원 모양 불렛
+
+```css
+#circle-bullet{
+         list-style-type: circle;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+#### 채운 사각형 모양 불렛
+
+```css
+#square-bullet{
+        list-style-type: square;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+
+#### 불렛 없애기
+
+```css
+#none-bullet{
+        list-style-type: none;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+
+### - 순서 있는 목록 스타일
+
+#### 1로 시작하는 10진수(기본값)
+
+```css
+#default-number{
+    list-style-type: decimal;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+
+#### 앞에 0이 붙은 10진수
+
+```css
+#zero-number{
+    list-style-type: decimal-leading-zero;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+
+#### 소문자 로마 숫자
+
+```css
+#lower-rome-number{
+    list-style-type: lower-roman;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+
+#### 대문자 로마 숫자
+
+```css
+#upper-rome-number{
+    list-style-type: upper-roman;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+
+#### 알파벳 소문자
+
+```css
+#lower-alpha{
+        list-style-type: lower-alpha;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+
+#### 알파벳 대문자
+
+```css
+#upper-alpha{
+        list-style-type: upper-alpha;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+
+### - 기호 대신 이미지 삽입
+
+```css
+#image-bullet{
+        list-style-image: url("./sample/image/strawberry.png");
+}
+```
+
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 6️⃣배경 스타일
+
+### - div 배경
+
+div 영역을 설정하는 경우 배경색을 지정하기 위해서는 div에 배경색을 별도로 지정해야한다.
+
+<pre class="language-css"><code class="lang-css">body{
+<strong>    background: rebeccapurple;
+</strong>    background: rgb(20,40,200);
+    background: rgba(20,40,200,0.6);
+<strong>    background: hsl(120,50%,50%);
+</strong>    background: hsla(120,50%,50%,0.4);
+    background: #d03e137b;
+}
+</code></pre>
+
+### - 배경 적용 범위 조정
+
+div 영역의 배경 적용 범위를 지정할 때 background-clip 속성을 사용한다.
+
+#### border-box
+
+```css
+#div1{
+    background-clip: border-box;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+#### padding-box
+
+```css
+#div2{
+    background-clip: padding-box;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+
+#### content-box
+
+```css
+#div3{
+    background-clip: content-box;
+}
+```
+
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+
+### - 배경 이미지
+
+#### repeat
+
+```css
+background-repeat: no-repeat;
+```
+
+#### size
+
+**cover**
+
+```css
+background-size: cover;
+```
+
+**contain**
+
+```css
+background-size: contain;
+```
+
+**auto**
+
+원본 크기 사용
+
+```css
+background-size: auto;
+```
+
+#### attachment
+
+**fixed**
+
+```css
+background-attachment: fixed;  /* 스크롤 하면 이미지가 고정되어있다. */
+```
+
+**scroll**
+
+```css
+background-attachment: scroll; /* 디폴트 */
+```
+
+#### position
+
+```css
+background-position: 50% 50%; /* 가운데 정렬 */
+background-position: 30px 50px; /* 위치 조정 가능 */
+background-position: right; /* 우측 정렬 */
+```
+
+
+
+## 7️⃣레이아웃 스타일
+
+### - width와 height
+
+내용이 차지하고 있는 영역의 크기를 조절 할 수 있는 속성
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+
+```css
+#test1{
+            width: 800px;
+            height: 200px;
+        }
+```
+
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+```css
+#test2{
+            width: 80%;
+            height: 200px;
+        }
+```
+
+
+
+### - 화면 배치 방법 변경
+
+#### display:inline-block
+
+블럭 요소를 인라인 요소로 변경
+
+영역은 인라인 요소로 변경되지만 내용은 블럭 요소가 되어 width와 height 속성을 설정할 수 있다.( 요소간에 작은 간격이 존재)
+
+```css
+.block-test1{
+            display: inline;
+        }
+```
+
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+
+#### display: block
+
+인라인 요소를 블럭 요소로 변경
+
+인라인 요소를 블럭 요소로 변경하면 width와 height값을 지정할 수 있고 세로로 쌓인다.
+
+```css
+.block-test2{
+            display: block;
+            margin-left:-6px;
+        }
+```
+
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+
+#### display:none
+
+화면에 보이지 않게 한다.
+
+
+
+### - 여백 관련 속성
+
+#### padding
+
+테두리와 컨텐츠 영역 사이의 거리를 조절하는 속성
+
+<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
+```css
+.test1{
+ padding: 100px;
+}
+
+.test2{
+ padding-top: 50px;
+ padding-left: 100px;
+}
+```
+
+#### margin
+
+box 레벨(block)이나 inline 레벨의 요소들 간의 간격을 조절하는 속성
+
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+
+```css
+.test3{
+ margin:50px
+}
+
+ .test4{
+ margin-top: 50px;
+ margin-left: 50px;s
+ margin: auto;
+}
+```
