@@ -13,6 +13,6 @@ icon: paw
 
 📅 2025.04.14 [#id-1-css](front-end/css.md#id-1-css "mention")
 
-📅 2025.04.15 [#undefined-13](front-end/css.md#undefined-13 "mention")
+&#x20;📅 2025.04.15 [#id-5](front-end/css.md#id-5 "mention")
 
 </details>
