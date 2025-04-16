@@ -15,6 +15,6 @@ icon: paw
 
 📅 2025.04.15 [#id-5](front-end/css.md#id-5 "mention")
 
-📅 2025.04.16&#x20;
+📅 2025.04.16 [2.-operation.md](javascript/2.-operation.md "mention")
 
 </details>

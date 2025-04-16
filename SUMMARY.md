@@ -13,7 +13,7 @@
 * [JavaScript](javascript/README.md)
   * [1.  Variable](javascript/1.-variable.md)
   * [2. Operation](javascript/2.-operation.md)
-  * [3. Object Literal](javascript/3.-object-literal.md)
+  * [3. Object Literal](3.-object-literal.md)
 
 ## BACK-END
 
