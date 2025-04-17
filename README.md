@@ -17,4 +17,6 @@ icon: paw
 
 📅 2025.04.16 [2.-operation.md](javascript/core/2.-operation.md "mention")
 
+📅 2025.04.17 [4.-function.md](javascript/core/4.-function.md "mention")
+
 </details>
