@@ -19,4 +19,6 @@ icon: paw
 
 📅 2025.04.17 [4.-function.md](javascript/core/4.-function.md "mention")
 
+📅 2025.04.18 [8.-array.md](javascript/core/8.-array.md "mention")
+
 </details>

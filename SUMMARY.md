@@ -19,6 +19,9 @@
     * [5. Scope](javascript/core/5.-scope.md)
     * [6. Object constructor](javascript/core/6.-object-constructor.md)
     * [7. Prototype](javascript/core/7.-prototype.md)
+    * [8. Array](javascript/core/8.-array.md)
+  * [Web](javascript/web/README.md)
+    * [1. DOM](javascript/web/1.-dom.md)
 
 ## BACK-END
 
