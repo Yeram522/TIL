@@ -21,4 +21,6 @@ icon: paw
 
 📅 2025.04.18 [8.-array.md](javascript/core/8.-array.md "mention")
 
+📅 2025.04.21 [#id-3-node-property](javascript/web/1.-dom.md#id-3-node-property "mention")
+
 </details>

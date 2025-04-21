@@ -22,6 +22,7 @@
     * [8. Array](javascript/core/8.-array.md)
   * [Web](javascript/web/README.md)
     * [1. DOM](javascript/web/1.-dom.md)
+    * [2. EVENT](javascript/web/2.-event.md)
 
 ## BACK-END
 
