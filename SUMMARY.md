@@ -23,6 +23,8 @@
   * [Web](javascript/web/README.md)
     * [1. DOM](javascript/web/1.-dom.md)
     * [2. EVENT](javascript/web/2.-event.md)
+    * [3. TIMER](javascript/web/3.-timer.md)
+    * [4. BOM](javascript/web/4.-bom.md)
 
 ## BACK-END
 
