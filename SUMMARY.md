@@ -25,6 +25,10 @@
     * [2. EVENT](javascript/web/2.-event.md)
     * [3. TIMER](javascript/web/3.-timer.md)
     * [4. BOM](javascript/web/4.-bom.md)
+  * [ES6](javascript/es6/README.md)
+    * [1. Class](javascript/es6/1.-class.md)
+    * [2. Arrow function](javascript/es6/2.-arrow-function.md)
+    * [3. Spread syntax](javascript/es6/3.-spread-syntax.md)
 
 ## BACK-END
 

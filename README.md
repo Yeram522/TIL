@@ -25,4 +25,6 @@ icon: paw
 
 📅 2025.04.22 [#id-3-event-propagation](javascript/web/2.-event.md#id-3-event-propagation "mention")
 
+📅 2025.04.23 [es6](javascript/es6/ "mention")
+
 </details>
