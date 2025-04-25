@@ -27,6 +27,6 @@ icon: paw
 
 📅 2025.04.23 [es6](language/javascript/es6/ "mention")
 
-📅 2025.04.24 [1.-literal.md](language/java/1.-literal.md "mention")
+📅 2025.04.24 [1.-literal.md](language/java/literal-and-value/1.-literal.md "mention")
 
 </details>
