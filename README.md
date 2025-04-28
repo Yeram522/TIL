@@ -29,4 +29,6 @@ icon: paw
 
 📅 2025.04.24 [1.-literal.md](language/java/literal-and-value/1.-literal.md "mention")
 
+📅 2025.04.28 [#static](language/java/method-and-api.md#static "mention")
+
 </details>
