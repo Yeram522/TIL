@@ -4,9 +4,9 @@ icon: '4'
 
 # Control Flow
 
-## 1️⃣ if
+## 1️⃣ Conditional
 
-### if문 표현식
+### 1. if문 표현식
 
 ```
 if(조건식) {
@@ -50,9 +50,7 @@ System.out.println("프로그램을 종료합니다.");
 ```
 {% endcode %}
 
-## 2️⃣ if-else
-
-### if-else문 표현식
+### 2. if-else문
 
 ```
 if(조건식) {
@@ -76,9 +74,7 @@ if(num % 2 != 0){
 System.out.println("프로그램을 종료합니다.");
 ```
 
-## 3️⃣ if-else-if
-
-### if-else-if 표현식
+### 3. if-else-if
 
 ```
 if(조건식1){
@@ -131,9 +127,7 @@ System.out.println(name + "학생의 점수는" + point + "이고, 등급은" + 
 System.out.println("프로그램을 종료합니다.");
 ```
 
-## 4️⃣ switch
-
-### switch 표현식
+### 4. switch
 
 ```
 switch(비교할 변수){
@@ -175,3 +169,126 @@ switch (op){
 }
 System.out.println(first + " " + op + " " + second + " = " + result);
 ```
+
+## 2️⃣ looping
+
+### 1. for
+
+```
+for(초기식; 조건식; 증감식){
+         조건을 만족하는 경우 수행할 구문(반복할 구문);
+}
+```
+
+```java
+/* 1부터 10까지 1씩 증가시키면서 i값을 출력하는 기본 반복문 */
+for(int i = 1; i <= 10; i++){
+    System.out.println(i);
+}
+```
+
+#### 중첩 for문
+
+```java
+for(int dan = 2; dan < 10; dan ++){
+    for(int su = 1; su < 10; su++){
+        System.out.println(dan + "*" + su + "=" + (dan*su));
+    }
+}
+```
+
+### 2. while
+
+<pre><code>초기식;
+while(조건식){
+  조건을 만족하는 경우 수행할 구문(반복할 구문);
+<strong>  증감식;
+</strong>}
+</code></pre>
+
+```java
+/* 1부터 10까지 1씩 증가시키면서 i값 출력해보자 */
+int i = 1;
+while (i <= 10){
+    System.out.println(i);
+    i++;
+}
+```
+
+#### 중첩 while 문
+
+```java
+int dan = 2;
+while(dan<10){
+    int su = 1;
+    while(su < 10){
+        System.out.println(dan + "*" +su + " = " + (dan*su));
+        su++;
+    }
+    System.out.println();
+    su++;
+}
+```
+
+### 3. do while
+
+```
+초기식;
+do{
+    1회차에는 무조건 실행하고, 이후에는 조건식을 확인하여 조건을 만족하는 경우 수행할 구문(반복할 수분)
+} while(조건식);
+```
+
+```java
+do{
+    System.out.println("최초 한 번 동작함...?");
+}while(false);
+```
+
+
+
+## 3️⃣branching
+
+### 1. break
+
+break는 반복문 내에서 사용한다.\
+해당 반복문을 빠져 나올 때 사용하며, 반복문의 조건문 판단 결과와  상관없이\
+반복문을 빠져나올 떄 사용한다.\
+일반적으로 if(조건식) {break;} 처럼 사용된다.\
+단, switch문은 반복문이 아니지만 예외적으로 사용된다.
+
+```java
+/* break를 이용하여 무한루프를 활용한 1 ~ 100 합계 구하기 */
+int sum = 0;
+int i = 1;
+while(true){
+    sum += i;
+
+    if(i == 100){
+        break;
+    }
+
+    i++;
+}
+```
+
+### 2. continue
+
+continue문은 반복문 내에서 사용한다.\
+해당 반복문의 반복 회차를 중간에 멈추고, 다시 증감식으로 넘어가게 해준다.\
+일반적으로 if(조건식) { continue; } 처럼 사용된다.\
+보통 반복문 내에서 특정 조건에 대한 예외를 처리하고자 할 때 자주 사용된다.
+
+```java
+/* 1부터 100 사이의 4의 배수이면서 5의 배수인 값 출력 */
+for(int i = 1; i <= 100; i++){
+
+    if(i % 4 == 0 && i % 5 == 0){
+
+        System.out.println("i = " + i);
+    }else{
+        continue;
+    }
+}
+```
+
