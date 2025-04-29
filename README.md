@@ -31,4 +31,6 @@ icon: paw
 
 📅 2025.04.28 [#static](language/java/method-and-api.md#static "mention")
 
+📅 2025.04.29 [#id-2-looping](language/java/control-flow.md#id-2-looping "mention")
+
 </details>
