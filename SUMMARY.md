@@ -40,3 +40,4 @@
   * [Operator](language/java/operator.md)
   * [Method & API](language/java/method-and-api.md)
   * [Control Flow](language/java/control-flow.md)
+  * [Array](language/java/array.md)

@@ -33,4 +33,6 @@ icon: paw
 
 📅 2025.04.29 [#id-2-looping](language/java/control-flow.md#id-2-looping "mention")
 
+📅 2025.04.30 [array.md](language/java/array.md "mention")
+
 </details>
