@@ -1,6 +1,7 @@
 ---
 description: Java&Spring 백엔드 개발자 과정 교육 일지
 icon: paw
+layout: landing
 ---
 
 # Today I Learn
@@ -9,7 +10,7 @@ icon: paw
 
 <details>
 
-<summary>4월</summary>
+<summary>April</summary>
 
 📅 2025.04.14 [#id-1-css](publishing/css.md#id-1-css "mention")
 
@@ -36,3 +37,12 @@ icon: paw
 📅 2025.04.30 [array.md](language/java/array.md "mention")
 
 </details>
+
+<details>
+
+<summary>May</summary>
+
+📅 2025.05.02 [#id-2-encapsulation](language/java/class-and-object/1.-class.md#id-2-encapsulation "mention")
+
+</details>
+

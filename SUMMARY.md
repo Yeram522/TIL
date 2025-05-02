@@ -41,3 +41,6 @@
   * [Method & API](language/java/method-and-api.md)
   * [Control Flow](language/java/control-flow.md)
   * [Array](language/java/array.md)
+  * [Class & Object](language/java/class-and-object/README.md)
+    * [1. Class](language/java/class-and-object/1.-class.md)
+    * [2. Object](language/java/class-and-object/2.-object.md)
