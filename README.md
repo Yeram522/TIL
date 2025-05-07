@@ -42,7 +42,9 @@ layout: landing
 
 <summary>May</summary>
 
-📅 2025.05.02 [#id-2-encapsulation](language/java/class-and-object/1.-class.md#id-2-encapsulation "mention")
+📅 2025.05.02 [#id-2-encapsulation](language/java/class-and-object.md#id-2-encapsulation "mention")
+
+📅 2025.05.07 [#id-6](language/java/class-and-object.md#id-6 "mention")
 
 </details>
 

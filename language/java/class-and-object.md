@@ -1,4 +1,8 @@
-# 1. Class
+---
+icon: '6'
+---
+
+# Class & Object
 
 ## 1️⃣ 클래스
 
@@ -136,7 +140,7 @@ public class Monster {
 
 이는 유지보수에 악영향을 미친다!
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>String name을 kind로만 바꿨을 뿐이지만 고쳐야 할 것이 많이 생겼다.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption><p>String name을 kind로만 바꿨을 뿐이지만 고쳐야 할 것이 많이 생겼다.</p></figcaption></figure>
 
 ### 2. 캡슐화의 역할
 
@@ -716,3 +720,469 @@ user2.setEnrollDate(new java.util.Date());
 
 System.out.println(user2.getEnrollDate());
 ```
+
+## 6️⃣ 오버로딩
+
+매개변수 부분의 타입, 갯수, 순서를 다르게 작성하면 서로 다른 메소드나 생성자로 인식하기 때문에&#x20;<mark style="background-color:yellow;">**동일한 이름의 생성자나 메소드를 여러 개 작성할 수 있는 것**</mark>을 오버로딩 이라고 한다.
+
+#### 오버로딩의 사용 이유
+
+_<mark style="color:orange;">매개변수의 종류 별로 메소드 내용을 다르게 작성 해야 하는 경우</mark>_&#xB4E4;이 종종 있다.\
+이 때, 동일한 기능의 메소드를 매개변수에 따라 다르게 이름을 정의하면 복잡하고 관리하기가 매우 어렵다.\
+따라서 <mark style="color:purple;">동일한 이름으로 다양한 종류의 매개변수에 따라 처리</mark>해야하는 여러 메소드를 동일한 이름으로 관리하기 위해\
+사용하는 기술을 오버로딩이라고 한다.
+
+#### 오버로딩의 조건
+
+동일한 이름을 가진 메소드의 파라미터 선언부에 <mark style="color:green;background-color:green;">매개변수의 타입, 갯수, 순서를 다르게 작성</mark>하여&#x20;한 클래스 내에 동일한 이름의 메소드를 여러 게 작성할 수 있도록 한다.&#x20;<mark style="color:red;">**메소드의 시그니쳐**</mark><mark style="color:red;">가 다르면 다른 메소드로 인식</mark>하기 때문이다.\
+즉, <mark style="background-color:yellow;">**시그니쳐 중 메소드 이름은 동일**</mark>해야 하기 때문에 파라미터 선언부가 다르게 작성되어야 오버로딩이 성립되다.
+
+```java
+ public void test() {}
+
+//    public void test() {} /* 메소드의 시그니처가 동일하기 때문에 에러가 난다.*/
+//    private void test() {} /* 접근 제한자는 메소드의 시그니처에 해당하지 않는다. */
+
+//    public int test(){ return 0;} /* 반환형 또한 메소드 시그니처에 해당하지 않는다.*/
+
+    public void test(int num){}
+//    public void test(int num2){} /* 매개변수 이름은, 메소드 시그니처에 영향을 주지 않는다.*/
+
+    public void test(int num1, int num2){} /* 매개변수 갯수에 따라 오버로딩이 성립*/
+
+    public void test(int num1, String name){} /* 매개 변수 타입*/
+
+    public void test(String name , int num1){} /* 매개 변수 순서 */
+```
+
+## 7️⃣ 매개변수
+
+#### 매개변수(parameter)로 사용 가능한 자료형
+
+1. 기본자료형
+2. 기본자료형 배열
+3. 클래스자료형
+4. 클래스자료형 배열
+5. 가변인자
+
+#### 가변인자
+
+`(자료형)...(매개변수명)` 을 이용해서 같은 자료형을 개수가 정해지지 않은 배열 형태를 매개변수를 사용할 수 있다.
+
+```java
+public void testVariableLengthArrayParameter(String name, String...hobby){
+    System.out.println("이름 : " + name);
+    System.out.println("취미의 갯수 : " + hobby.length);
+    System.out.println("취미 : ");
+    for(int i = 0; i < hobby.length; i ++){
+        System.out.println(hobby[i] + " ");
+    }
+    System.out.println();
+}
+```
+
+## 8️⃣ final
+
+final은 종단의 의미를 가지는 키워드이다.
+
+final 키워드를 사용할 수 있는 위치는 다양한 편이며 의미가 약간은 다르지만, 결국 <mark style="background-color:yellow;">**변경 불가의 의미**</mark>이다.
+
+\
+1\. **지역변수** : 초기화 이후 값 변경 불가\
+2\. **매개변수** : 호출시 전달한 인자 변경 불가\
+3\. **전역변수** : 인스턴스 생성 후 초기화 이후에 값 변경 불가\
+4\. **클래스(static) 변수** : 프로그램 start 이후 값 변경 불가\
+5\. **non-static 메소드** : 메소드 재작성(overriding) 불가\
+6\. **static 메소드** : 메소드 재작성(overriding) 불가\
+7\. **클래스** : 상속 불가
+
+
+
+### 1. non-static field에 final 사용
+
+{% code title="❌ 잘못된 사용" %}
+```java
+private final int nonStaticNum;
+```
+{% endcode %}
+
+{% hint style="info" %}
+final은 변경 불가의 의미를 가진다.\
+따라서 초기 인스턴스가 생성되고 나면 기본값 0이 필드에 들어가게 되는데,\
+그 초기화 이후 값을 변경할 수 없기 때문에 선언하면서 바로 초기화를 해주어야한다.
+{% endhint %}
+
+#### 💡<mark style="color:green;">해결하는 방법!</mark>
+
+```
+/* 1-1. 선언과 동시에 초기화 한다. */
+private final int NON_STATIC_NUM = 1;
+
+/* 1-2. 생성자를 이용해서 초기화 한다. */
+private final  String NON_STATIC_NAME;
+
+// 생성자를 이용해 필드를 초기화.
+public FinalFieldTest(String nonStaticName){
+    this.NON_STATIC_NAME = nonStaticName;
+}
+```
+
+### 2. static field에 final 사용
+
+static에도 자바에서 지정한 기본값이 초기에 대입되기 때문에&#x20;final 키워드 사용 시 초기화를 하지 않으면 에러가 발생한다.
+
+```java
+//    private static final int STATIC_NUM; // 자동으로 0으로 초기화됨
+private static final int STATIC_NUM = 1; .// 선언과 함께 초기화 ⭕
+```
+
+#### ‼️<mark style="color:red;">생성자를 이용한 초기화는 불가능하다.</mark>
+
+생성자는 인스턴스가 생성되는 시점에 호출이 되기 때문에 그 전에는 초기화가 일어나지 못한다.\
+하지만 static은 프로그램이 start될 때 할당되기 때문에 초기화가 되지 않은 상태로 선언된 것과\
+동일하여 기본값으로 초기화 된 후 값을 변경하지 못하기 때문에 에러가 발생한다.
+
+```java
+private static final double STATIC_DOUBLE;
+
+//    public FinalFieldTest(double staticDouble){
+//        FinalFieldTest.STATIC_DOUBLE = staticDouble;
+//    }
+```
+
+## 9️⃣Singleton
+
+### 🤔 싱글톤 패턴이란?
+
+애플리케이션이 시작될 때 어떤 클래스가 최초 한 번만 메모리에 할당하고&#x20;그 메모리에 인스턴스를 만들어서 하나의 인스턴스를 공유해서 사용하며&#x20;메모리 낭비를 방지할 수 있게 함(매번 인스턴스 생성 하지 않음)
+
+#### 장점
+
+1. 첫 번째 이용 시에는 인스턴스를 생성해야 하므로 속도 차이가 나지 않지만   &#x20;두 번째 이용 시에는 인스턴스 생성 시간 없이 사용할 수 있다.
+2. 인스턴스가 절대적으로 한 개만 존재하는 것을 보증할 수 있다.
+
+#### 단점
+
+1. 싱글톤 인스턴스가 너무 많은 일을 하거나 많은 데이터를 공유하면 결합도가 높아진다.
+2. 동시성 문제를 고려해서 설계해야 하기 때문에 난이도가 있다.
+
+
+
+### 싱글톤 구현 방법
+
+#### 1. 이른 초기화 구현
+
+```java
+package com.ohgiraffers.section06.singleton;
+
+public class EagerSingleton {
+
+    private static EagerSingleton eager = new EagerSingleton();
+
+    private EagerSingleton() {}
+
+    public static EagerSingleton getInstance() {
+        return eager;
+    }
+}
+```
+
+```java
+EagerSingleton eager = new EagerSingleton(); // 생성자를 private으로 막았기 때문에 사용할 수 없다.
+
+EagerSingleton eager1 = EagerSingleton.getInstance();
+EagerSingleton eager2 = EagerSingleton.getInstance();
+
+System.out.println(eager1.hashCode());
+System.out.println(eager2.hashCode());
+```
+
+#### 2. 게으른 초기화 구현
+
+```java
+package com.ohgiraffers.section06.singleton;
+
+public class LazySingleton {
+
+    private static LazySingleton lazy;
+
+    private LazySingleton() {}
+
+    public static LazySingleton getInstance(){
+
+        /* 인스턴스를 생성한 적이 없는 경우 인스턴스를 생성해서 반환하고
+        *  생성한 인스턴스가 있는 경우 만들어둔 인스턴스를 반환한다. */
+        if(lazy == null){
+            lazy = new LazySingleton();
+        }
+
+        return lazy;
+    }
+}
+```
+
+```java
+LazySingleton lazy1 = LazySingleton.getInstance();
+LazySingleton lazy2 = LazySingleton.getInstance();
+
+System.out.println(lazy1.hashCode());
+System.out.println(lazy2.hashCode());
+```
+
+## 🔟 Static
+
+정적 메모리 영역에 프로그램이 start 될 때 할당을 하는 키워드
+
+<mark style="color:red;">**인스턴스를 생성하지 않고**</mark>도 <mark style="background-color:green;">사용할 클래스의 멤버(필드, 메소드)에 지정</mark>할 수 있다.\
+여러 인스턴스가 공유해서 사용할 목적의 공간이다.\
+하지만 static 키워드의 남발은 유지보스와 추적이 힘든 코드를 작성하는 피해야할 방식이다.\
+명확한 목적이 존재하지 않는 이상 static 키워드 사용은 자제하자.\
+의도적으로 static 키워드를 사용하는 대표적인 예는 singleton 객체를 생성할 때 이다.
+
+### 1. static 키워드를 필드에서 사용
+
+```java
+package com.ohgiraffers.section06.statickeyword;
+
+public class StaticFieldTest {
+
+    private int nonStaticCount;
+
+    private static int staticCount;
+
+    public StaticFieldTest() {}
+
+    public int getNonStaticCount(){
+        return nonStaticCount;
+    }
+
+    /* statkc 필드에 접근하기 위해서는 클래스명.필드명으로 접근한다.*/
+    public int getStaticCount(){
+        return StaticFieldTest.staticCount;
+    }
+
+    /* 필드 값을 1씩 증가시키기 위한 메소드 */
+    public void increaseNonStaticCount(){
+        nonStaticCount ++;
+    }
+
+    public void increaseStaticCount(){
+        StaticFieldTest.staticCount++;
+    }
+}
+```
+
+{% code title="✅ static 키워드를 필드에서 사용" %}
+```java
+StaticFieldTest sft1 = new StaticFieldTest();
+
+System.out.println(sft1.getNonStaticCount());
+System.out.println(sft1.getStaticCount());
+
+sft1.increaseNonStaticCount();
+sft1.increaseStaticCount();
+
+System.out.println(sft1.getNonStaticCount());
+System.out.println(sft1.getStaticCount());
+
+StaticFieldTest sft2 = new StaticFieldTest();
+
+System.out.println(sft2.getNonStaticCount());
+System.out.println(sft2.getStaticCount()); // 값 유지
+```
+{% endcode %}
+
+인스턴스 변수의 경우에는 sft1, sft2 두 개의 인스턴스가 서로 값을 공유하지 못하고&#x20;인스턴스를 생성할때마다 0으로 초기화 되었다.\
+하지만 _<mark style="color:red;background-color:yellow;">static 필드의 경우에는 클래스 변수 자체가 프로그램을 종료할 때 까지 유지되고&#x20;있기 때문에 값을 유지하고 있다.</mark>_\
+따라서 여러 개의 인스턴스가 같은 공간을 공유할 목적으로 필드에 static 키워드를 사용한다.
+
+### 2. static 메소드 확인
+
+```java
+package com.ohgiraffers.section06.statickeyword;
+
+public class StaticMethodTest {
+    private int count;
+
+    public void nonStaticMethod(){
+        this.count ++;
+
+        System.out.println("nonStaticMethod 호출됨...");
+    }
+
+    public static void staticMethod(){
+//        this.count ++ ; // 인스턴스를 만들고 사용하는 메소드가 아니기 때문에 this는 사용할 수 없다.
+
+        System.out.println("staticMethod 호출됨...");
+    }
+
+}
+```
+
+{% code title="✅ non-static 메소드 호출" %}
+```java
+StaticMethodTest smt = new StaticMethodTest();
+smt.nonStaticMethod();
+```
+{% endcode %}
+
+static method는 정적 영역에 두고 인스턴스를 생성하지 않고 호출할 목적으로&#x20;만들기 때문에 static 메소드를 호출하는 방식으로 호출해야 한다.
+
+{% code title="❌ 권장하지 않음!" %}
+```java
+smt.staticMethod(); // 권장하지 않음
+```
+{% endcode %}
+
+{% code title="✅ static 메소드 호출" %}
+```java
+StaticMethodTest.staticMethod(); // 권장함
+```
+{% endcode %}
+
+## 11.  변수의 종류
+
+### 필드
+
+클래스 영역에 작성하는 변수를 뜻함.
+
+필드 == 멤버변수(클래스가 가지는 멤버라는 의미) == 전역 변수(클래스 전역에서 사용할 수 있는 변수라는 의미)
+
+### 인스턴스 변수
+
+non-static field\
+인스턴스 생성 시점에 사용 가능한 변수라는 의미
+
+```java
+private int globalNum;
+```
+
+
+
+### 클래스 변수
+
+static field(정적 필드)\
+정적(클래스) 영역에 생성되는 변수라는 의미
+
+```java
+private static int staticNum;
+```
+
+### 지역 변수
+
+메소드 영역에서 작성하는 변수를 지역변수라고 한다.\
+메소드의 괄호 안에 선언하는 변수를 매개변수라고 한다.\
+매개변수도 일종의 지역변수로 생각하면 된다.\
+<mark style="color:red;background-color:yellow;">지역변수와 매개변수 모두 호출 시 stack을 할당받아 stack에 생성된다.</mark>
+
+```java
+public void tesMethod(int num){ // 메소드 영역의 시작
+        int localNum;
+
+        System.out.println(num);
+
+//        System.out.println(localNum); // 반드시 초기화가 되어야 사용할 수 있다.
+        System.out.println(globalNum);
+        System.out.println(staticNum);
+    }
+```
+
+```java
+public void testMethod2(){
+// localNum은 다른 메소드 영역에 있기 때문에 사용할 수 없다.
+//        System.out.println(localNum);
+
+        System.out.println(globalNum);
+        System.out.println(staticNum);
+ }
+```
+
+## 12. 초기화 블럭
+
+복잡한 초기화를 수행할 수 있는 블럭을 제공하며, 인스턴스 초기화 블럭과 정적 초기화 블럭으로 구분된다.
+
+1\. 인스턴스 초기화 블럭
+
+: 인스턴스가 생성되는 시점에 생성자 호출 이전에 먼저 실행이 된다.\
+인스턴스를 호출하는 시점마다 호출이 된다.\
+인스턴스 변수를 초기화하며 정적필드에는 실행시점마다 값을 덮어쓴다.
+
+
+
+```
+{
+  초기화 내용 작성
+}
+```
+
+\
+2\. 정적 초기화 블럭
+
+: 클래스가 로드 될 때 한 번 동작한다.\
+정적 필드를 초기화하며, 인스턴스변수는 초기화하지 못한다.
+
+```
+static {
+  초기화 내용 작성
+}
+```
+
+### 1. 필드를 초기화 하지 않은 경우
+
+JVM이 정한 기본값으로 객체가 생성된다.
+
+```java
+private String name;
+private int price;
+private static String brand;
+```
+
+### 2. 명시적 초기화
+
+```java
+private String name = "갤럭시";
+private  int price = 10000000;
+private static String brand = "삼송";
+```
+
+### 3. 인스턴스 초기화 블럭
+
+<pre class="language-java"><code class="lang-java">{
+<strong>        name = "사이언";
+</strong>        price = 900000;
+        brand = "사과";
+        System.out.println("인스턴스 초기화 블럭 동작함..");
+}
+
+static {
+/* static 초기화 블럭에서는 non-static 필드를 초기화하지 못한다. */
+//        name = "아이펀";
+//        pricc  = 1000000;
+        brand = "헬지";
+        System.out.println("정적 초기화 블럭 동작함..");
+}
+
+public Product() {}
+</code></pre>
+
+### 4. 매개변수 있는 생성자
+
+위에서 초기화된 값을 다 무시하고 생성자에 작성한 초기화 내용으로 인스턴스를 초기화시킨다.
+
+```java
+public Product(String name, int price, String brand){
+    this.name = name;
+    this.price = price;
+    Product.brand = brand;
+    System.out.println("매개변수 있는 생성자 호출됨..");
+}
+
+public String getInformation(){
+
+    return "Product [name=" + this.name + ", price=" + this.price  + ", brand=" + Product.brand + "]";
+}
+```
+
+
+
+
