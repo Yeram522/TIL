@@ -46,5 +46,7 @@ layout: landing
 
 📅 2025.05.07 [#id-6](language/java/class-and-object.md#id-6 "mention")
 
+📅 2025.05.08 [object-array.md](language/java/object-array.md "mention")
+
 </details>
 

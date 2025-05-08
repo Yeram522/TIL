@@ -42,3 +42,5 @@
   * [Control Flow](language/java/control-flow.md)
   * [Array](language/java/array.md)
   * [Class & Object](language/java/class-and-object.md)
+  * [Object Array](language/java/object-array.md)
+  * [Inheritance](language/java/inheritance.md)
