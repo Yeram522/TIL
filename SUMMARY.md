@@ -44,3 +44,4 @@
   * [Class & Object](language/java/class-and-object.md)
   * [Object Array](language/java/object-array.md)
   * [Inheritance](language/java/inheritance.md)
+  * [Polymorphism](language/java/polymorphism.md)
