@@ -1,5 +1,5 @@
 ---
-icon: '6'
+icon: '1'
 ---
 
 # Class & Object
@@ -140,7 +140,7 @@ public class Monster {
 
 이는 유지보수에 악영향을 미친다!
 
-<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption><p>String name을 kind로만 바꿨을 뿐이지만 고쳐야 할 것이 많이 생겼다.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>String name을 kind로만 바꿨을 뿐이지만 고쳐야 할 것이 많이 생겼다.</p></figcaption></figure>
 
 ### 2. 캡슐화의 역할
 

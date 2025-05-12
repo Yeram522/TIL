@@ -1,5 +1,5 @@
 ---
-icon: '7'
+icon: '2'
 ---
 
 # Object Array

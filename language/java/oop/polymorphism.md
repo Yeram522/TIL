@@ -1,6 +1,6 @@
 ---
 description: polymorphism
-icon: '9'
+icon: '2'
 ---
 
 # Polymorphism
