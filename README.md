@@ -48,7 +48,8 @@ layout: landing
 
 📅 2025.05.08 [object-array.md](language/java/object/object-array.md "mention")
 
-📅 2025.05.09 [polymorphism.md](language/java/oop/polymorphism.md "mention")\
+📅 2025.05.09 [polymorphism.md](language/java/oop/polymorphism.md "mention")
+
 📅 2025.05.12 [api](language/java/api/ "mention")
 
 </details>

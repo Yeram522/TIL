@@ -51,3 +51,5 @@
     * [String](language/java/api/string.md)
     * [String Builder](language/java/api/string-builder.md)
     * [Wrapper](language/java/api/wrapper.md)
+  * [Generics](language/java/generics.md)
+  * [➕ Collection](language/java/collection.md)
