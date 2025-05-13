@@ -52,5 +52,7 @@ layout: landing
 
 📅 2025.05.12 [api](language/java/api/ "mention")
 
+📅 2025.05.13 [#comparator](language/java/collection.md#comparator "mention")
+
 </details>
 

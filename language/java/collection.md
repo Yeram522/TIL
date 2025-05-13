@@ -25,7 +25,9 @@ Collection Framework는 크게 3가지 인터페이스 중 한 가지를 상속�
     •  _<mark style="color:orange;">value는 중복된 값을 저장할 수 있다.</mark>_    \
     •  <mark style="color:green;">HashMap, TreeMap, HashTable, Properties</mark> 등이 있다.
 
-## ArrayList
+## 1️⃣ List
+
+### ArrayList
 
 가장 많이 사용되는 컬렉션 클래스이다.\
 내부적으로 **배열을 이용**하여 요소를 관리하며, <mark style="color:red;">인덱스를 이용해 배열 요소에 빠르게 접근</mark>할 수 있다.
@@ -86,7 +88,7 @@ ArrayList는 저러한 배열의 단점을 보완하고자\
         System.out.println(stringList);
 ```
 
-## Iterator
+### Iterator
 
 Collection 인터페이스의 iterator() 메소드를 이용해서 인스턴스를 생성할 수 있다.\
 컬렉션에서 값을 읽어오는 방식을 통일된 방식으로 제공하기 위해 사용한다.\
@@ -115,3 +117,75 @@ while (dIter.hasNext()){
 }
 System.out.println(descList);
 ```
+
+만약, ArrayList의 타입을 사용자 지정 클래스로 정해놓았다면 위에서 사용했던 `sort` 함수는 사용할 수 없다.
+
+{% code title="❌ 사용자 지정 타입은 ArrayList의 sort함수 사용 불가능" %}
+```java
+List<BookDTO> bookList = new ArrayList<>();
+        
+bookList.add(new BookDTO(1, "홍길동전", "허균",50000));
+bookList.add(new BookDTO(2, "목민심서", "정약용",30000));
+bookList.add(new BookDTO(3, "동의보감", "허준",40000));
+bookList.add(new BookDTO(4, "삼국사기", "김부식",46000));
+bookList.add(new BookDTO(5, "삼국유사", "일연",58000));
+
+Collections.sort(bookList);  //❌ 문법 에러
+```
+{% endcode %}
+
+### Comparator
+
+Comparator 인터페이스의 compare 함수는 `@Contract(pure=true)` 라고 되어있는데,\
+이는 순수 가상 함수라는 뜻으로, 구현할 때 반드시 해당 함수를 오버라이딩 해야 한다는 의미이다.
+
+```java
+public class AscendingPrice implements Comparator<BookDTO> {
+
+    @Override
+    public int compare(BookDTO o1, BookDTO o2) {
+
+        int result = 0;
+
+        // 오름 차순이기 때문에 순서를 바꿔야 하는 경우는 양수를 반환하도록 한다.
+        if(o1.getPrice() > o2.getPrice()){
+            
+            result =  1;
+
+        }else if(o1.getPrice() < o2.getPrice()){            
+            // 이미 오름차순 정렬 돼서 음수 반환
+            result = -1;
+        } else{
+            // 두 값이 같을 경우
+            result = 0;
+        }
+
+        return result;
+    }
+}
+```
+
+{% code title="✅ Comparator의 compare 오버라이딩" %}
+```java
+bookList.sort(new AscendingPrice());
+```
+{% endcode %}
+
+{% code title="✅ 익명 클래스를 이용" %}
+```java
+bookList.sort(new Comparator<BookDTO>() { // 익명 클래스
+    @Override
+    public int compare(BookDTO o1, BookDTO o2) {
+
+        // 순서를 바꾸는 경우 양수, 바꾸지 않는 경우에는 음수 반환
+        return o1.getPrice() >= o2.getPrice() ? -1 : 1;
+    }
+});
+```
+{% endcode %}
+
+{% code title="✅ string의 compareTo 함수를 이용한 정렬" %}
+```java
+bookList.sort((BookDTO b1, BookDTO b2) -> b2.getTitle().compareTo(b1.getTitle()));
+```
+{% endcode %}
