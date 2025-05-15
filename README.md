@@ -54,5 +54,7 @@ layout: landing
 
 📅 2025.05.13 [#comparator](language/java/collection.md#comparator "mention")
 
+📅 2025.05.15 [exception.md](language/java/exception.md "mention")
+
 </details>
 
