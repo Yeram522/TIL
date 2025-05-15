@@ -52,4 +52,6 @@
     * [String Builder](language/java/api/string-builder.md)
     * [Wrapper](language/java/api/wrapper.md)
   * [Generics](language/java/generics.md)
-  * [➕ Collection](language/java/collection.md)
+  * [Collection](language/java/collection.md)
+  * [Exception](language/java/exception.md)
+  * [IO](language/java/io.md)
