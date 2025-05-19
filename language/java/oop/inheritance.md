@@ -268,4 +268,4 @@ private 접근 제한자: 단어 뜻 그대로 개인적인 것이라 외부에�
 default 접근 제한자 : 같은 패키지에 소속된 클래스에서만 사용할 수 있도록 합니다.
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

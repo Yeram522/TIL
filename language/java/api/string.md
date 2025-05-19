@@ -186,7 +186,7 @@ System.out.println(str4.hashCode()); // 3254818
 
 <summary>🤔 Java Heap과 String pool, hashcode</summary>
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 리터럴로 String을 생성하면 java heap의 string pool에 저장 되어 재사용되지만,\
 `new` 키워드를 이용해 새로운 인스턴스를 생성하므로 str3과 str4는 별도의 객체로 볼 수 있다.

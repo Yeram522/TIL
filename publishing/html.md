@@ -394,7 +394,7 @@ example
 <img src="sample/image/flower1.PNG" width="200px" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;✅가변 크기 단위 : 화면 사이즈 혹은 기준이 사이즈에 따라 크기 변경
 
@@ -402,7 +402,7 @@ example
 <img src="sample/image/flower1.PNG" width="15%" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -414,7 +414,7 @@ example
 <audio src="sample/audio/major.mp3" controls="controls" loop="loop"></audio>
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### - 📼 비디오 관련 태그
 
@@ -422,7 +422,7 @@ example
 <video src="sample/video/video1.mp4" controls="controls"></video>
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -459,7 +459,7 @@ example
     </a>
 ```
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### - 한 페이지 내에서 점프하는 앵커
 
@@ -490,7 +490,7 @@ example
     &#x3C;a href="#menu">메뉴로 돌아가기&#x3C;/a>
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -509,7 +509,7 @@ form 태그 내의 input 태그들을 통해 **사용자가 입력한 정보를 
 </form>
 ```
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 경로</mark>로 method를 지정한 방식에 따라 <mark style="color:green;">input 태그에 입력한 값들을 전달</mark>한다.
@@ -536,7 +536,7 @@ submit 버튼을 눌렀을 때, <mark style="color:green;">action에 지정한 �
 </form>
 ```
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### - 다양한 종류의 input 태그들 type별로 확인하기
 
