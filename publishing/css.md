@@ -20,7 +20,7 @@ icon: css3-alt
 
 HTML <mark style="background-color:purple;">문서 안의 모든 태그</mark>를 선택할 때 전체 선택자를 사용할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 * {
@@ -41,7 +41,7 @@ HTML <mark style="background-color:purple;">문서 안의 모든 태그</mark>�
 
 #### 태그 선택자
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 p,li{
@@ -63,7 +63,7 @@ HTML 문서 내에 해당하는 <mark style="background-color:purple;">아이디
 
 💡<mark style="background-color:yellow;">아이디 선택자가 클래스 선택자보다 우선순위가 더 높다.</mark>
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
  #id2{
@@ -88,7 +88,7 @@ HTML 문서 내에 해당하는 <mark style="background-color:purple;">아이디
 
 HTML 문서 내에 <mark style="background-color:purple;">여러 개의 태그를 동일한 클래스명으로 지정하여 선택</mark>할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 .class1 {
@@ -121,7 +121,7 @@ HTML 문서 내에 <mark style="background-color:purple;">여러 개의 태그�
 
 (주로 id나 class 속성 아닌 것들에 적용)
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 속성값과 일치하는 태그, 요소 선택 */
@@ -159,7 +159,7 @@ div[class*=div]{
 
 <mark style="color:green;">자손 선택자</mark> : 바로 아래의 요소, <mark style="color:green;">후손 선택자</mark> : 하위 요소 전부
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /*자손 선택자*/
@@ -197,7 +197,7 @@ div[class*=div]{
 
 동위 관계(_형제 관계_)에서 뒤에 위치한 태그를 선택할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 형제관계 선택자 (동위 선택자) */
@@ -272,7 +272,7 @@ div[class*=div]{
 
 <mark style="background-color:purple;">입력 양식의 상태</mark>에 따라 선택되는 선택자
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 체크 되면 해당 양식에 따라 변경*/
@@ -295,7 +295,7 @@ input[type=checkbox]:checked{
 
 #### 초점이 맞추어진 input 태그 선택
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 선택 되면 해당 양식으로 변경 */
@@ -315,7 +315,7 @@ input[type=checkbox]:checked{
 
 #### &#x20; 사용 가능한 input 태그 선택
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 option:disabled{
@@ -354,7 +354,7 @@ input:disabled{
 
 <mark style="background-color:purple;">특정한 위치에 있는 태그</mark> 선택(위치로 구분)
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 형제 탐색 선택자들 */
@@ -393,7 +393,7 @@ input:disabled{
 
 <mark style="background-color:purple;">태그 내부에서 특정 조건의 문자를 선택</mark>하는 선택자
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 첫 번째 글자 선택*/
@@ -433,7 +433,7 @@ input:disabled{
 <mark style="color:purple;">태그 선택자 < 클래스 선택자 < 아이디 선택자 < 인라인 선택자 < !important</mark> 순서로 우선순위를 가진다.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 .test1{
@@ -473,7 +473,7 @@ div{
 
 텍스트의 글꼴을 지정할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 * {
@@ -497,7 +497,7 @@ div{
 
 <mark style="background-color:green;">텍스트의 크기</mark>를 변경할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 /* 크기 관련 스타일 지정 */
@@ -533,7 +533,7 @@ div{
 
 <mark style="background-color:green;">두꺼운 글씨</mark>를 표현할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 #fw1{
@@ -581,7 +581,7 @@ div{
 
 <mark style="background-color:green;">텍스트의 기울임</mark>을 지정할 때 사용한다.
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```css
 #fs1 {

@@ -16,7 +16,7 @@ SELECT
   FROM TBL_MENU
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### ascending order
 
@@ -26,7 +26,7 @@ SELECT
 ORDER BY MENU_PRICE ASC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### descending order
 
@@ -36,7 +36,7 @@ ORDER BY MENU_PRICE ASC;
 ORDER BY MENU_PRICE DESC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### ascending and descending order
 
@@ -47,7 +47,7 @@ ORDER BY MENU_PRICE DESC,
          MENU_NAME ASC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### attribute끼리 연산한 결과를 컬럼으로 받을 수 있다.
 
@@ -60,7 +60,7 @@ SELECT
  ORDER BY MENU_PRICE * MENU_CODE DESC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FIELD()를 이용한 정렬 우선순위 정하기
 
@@ -72,7 +72,7 @@ SELECT
 ORDER BY FIELD(ORDERABLE_STATUS,'N','Y');
 ```
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 오름차순 시 NULL 을 처음으로 정렬
 
@@ -85,7 +85,7 @@ SELECT
 ORDER BY REF_CATEGORY_CODE;
 ```
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 오름차순 시 NULL을 마지막으로 정렬
 
@@ -98,7 +98,7 @@ SELECT
 ORDER BY REF_CATEGORY_CODE IS NULL;
 ```
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 내림차순 시 NULL을 마지막으로 정렬
 
@@ -118,3 +118,18 @@ ORDER BY REF_CATEGORY_CODE IS NULL DESC, REF_CATEGORY_CODE DESC;
 `REF_CATEGORY_CODE_DESC` 는 각 그룹 내에서 해당 속성값을 기준으로 내림차순 정렬하므로, NULL이 아닌 값들 중에서 큰 값부터 작은 순으로 정렬된다.
 
 따라서, 이 쿼리는 아래와 같이 NULL값을 가진 행들이 가장 먼저 표시 되고 `REF_CATEGORY_CODE` 값의 내림차순으로 정렬되어 표시된다.
+
+
+
+### 내림차순 시 NULL을 처음으로 정렬
+
+```sql
+SELECT
+       CATEGORY_CODE
+     , CATEGORY_NAME
+     , REF_CATEGORY_CODE
+  FROM TBL_CATEGORY
+ ORDER BY REF_CATEGORY_CODE IS NULL DESC, REF_CATEGORY_CODE DESC;
+```
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
