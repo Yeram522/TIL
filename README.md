@@ -60,5 +60,7 @@ layout: landing
 
 📅 2025.05.19 [where.md](dbms/mysql/where.md "mention")
 
+📅 2025.05.20 [subquery.md](dbms/mysql/undefined/subquery.md "mention")
+
 </details>
 

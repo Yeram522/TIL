@@ -70,3 +70,6 @@
   * [JOIN](dbms/mysql/join.md)
   * [GROUPING](dbms/mysql/grouping.md)
   * [SUBQUERY](dbms/mysql/subquery.md)
+  * [SET\_OPERATION](dbms/mysql/set_operation.md)
+  * [실습](dbms/mysql/undefined/README.md)
+    * [SUBQUERY](dbms/mysql/undefined/subquery.md)
