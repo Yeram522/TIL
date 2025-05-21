@@ -62,5 +62,7 @@ layout: landing
 
 📅 2025.05.20 [subquery.md](dbms/mysql/undefined/subquery.md "mention")
 
+📅 2025.05.21 [java-db.md](dbms/jdbc/java-db.md "mention")
+
 </details>
 

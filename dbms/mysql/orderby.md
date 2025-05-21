@@ -26,7 +26,7 @@ SELECT
 ORDER BY MENU_PRICE ASC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### descending order
 
@@ -36,7 +36,7 @@ ORDER BY MENU_PRICE ASC;
 ORDER BY MENU_PRICE DESC;
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### ascending and descending order
 
@@ -132,4 +132,4 @@ SELECT
  ORDER BY REF_CATEGORY_CODE IS NULL DESC, REF_CATEGORY_CODE DESC;
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
