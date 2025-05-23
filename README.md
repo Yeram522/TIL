@@ -64,5 +64,9 @@ layout: landing
 
 📅 2025.05.21 [java-db.md](dbms/jdbc/java-db.md "mention")
 
+📅 2025.05.22 [https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers](https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers)
+
+📅 2025.05.23
+
 </details>
 
