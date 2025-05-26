@@ -66,7 +66,9 @@ layout: landing
 
 📅 2025.05.22 [https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers](https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers)
 
-📅 2025.05.23
+📅 2025.05.23 [https://github.com/Yeram522/Java-Practice/tree/main/my-batis-crud-practice](https://github.com/Yeram522/Java-Practice/tree/main/my-batis-crud-practice)
+
+📅 2025.05.26 [dyanamic-sql.md](dbms/mybatis/dyanamic-sql.md "mention")
 
 </details>
 
