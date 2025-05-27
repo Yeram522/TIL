@@ -70,5 +70,7 @@ layout: landing
 
 📅 2025.05.26 [dyanamic-sql.md](dbms/mybatis/dyanamic-sql.md "mention")
 
+📅 2025.05.27 스터디 프로젝트에 수업 내용을 추가해서 개선함[https://github.com/Yeram522/Java-Practice/commit/56aecbd6c801f3c8a32e0615f03172af8234e61b](https://github.com/Yeram522/Java-Practice/commit/56aecbd6c801f3c8a32e0615f03172af8234e61b)
+
 </details>
 
