@@ -73,14 +73,28 @@
   * [SET\_OPERATION](dbms/mysql/set_operation.md)
   * [실습](dbms/mysql/undefined/README.md)
     * [SUBQUERY](dbms/mysql/undefined/subquery.md)
-* [JDBC](dbms/jdbc/README.md)
-  * [JAVA에서 DB 연결하기](dbms/jdbc/java-db.md)
-  * [Statement로 데이터 조회하기](dbms/jdbc/statement.md)
-  * [CRUD](dbms/jdbc/crud.md)
-* [MyBatis](dbms/mybatis/README.md)
-  * [CRUD](dbms/mybatis/crud.md)
-  * [Dyanamic SQL](dbms/mybatis/dyanamic-sql.md)
+
+## API
+
+* [JDBC](api/jdbc/README.md)
+  * [JAVA에서 DB 연결하기](api/jdbc/java-db.md)
+  * [Statement로 데이터 조회하기](api/jdbc/statement.md)
+  * [CRUD](api/jdbc/crud.md)
+
+***
+
+* [Servlet](servlet/README.md)
+  * [Servlet LifeCycle](servlet/servlet-lifecycle.md)
+  * [Request](servlet/request.md)
+  * [Response](servlet/response.md)
+  * [Exception Handler](servlet/exception-handler.md)
+
+## Persistance Framework
+
+* [MyBatis](persistance-framework/mybatis/README.md)
+  * [CRUD](persistance-framework/mybatis/crud.md)
+  * [Dyanamic SQL](persistance-framework/mybatis/dyanamic-sql.md)
 
 ## ETC
 
-* [취업 캠프](etc/undefined.md)
+* [250530 취업 캠프](etc/250530.md)

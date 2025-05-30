@@ -16,7 +16,7 @@ SELECT
  WHERE ORDERABLE_STATUS = 'Y';
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 SELECT
@@ -27,7 +27,7 @@ SELECT
  WHERE MENU_PRICE = 13000;
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 같지 않음 연산자와 함께 WHERE절 사용
 

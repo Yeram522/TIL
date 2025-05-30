@@ -62,17 +62,19 @@ layout: landing
 
 📅 2025.05.20 [subquery.md](dbms/mysql/undefined/subquery.md "mention")
 
-📅 2025.05.21 [java-db.md](dbms/jdbc/java-db.md "mention")
+📅 2025.05.21 [java-db.md](api/jdbc/java-db.md "mention")
 
 📅 2025.05.22 [https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers](https://github.com/Yeram522/Java-Practice/tree/main/jdbc-crud-practice/src/main/java/com/ohgiraffers)
 
 📅 2025.05.23 [https://github.com/Yeram522/Java-Practice/tree/main/my-batis-crud-practice](https://github.com/Yeram522/Java-Practice/tree/main/my-batis-crud-practice)
 
-📅 2025.05.26 [dyanamic-sql.md](dbms/mybatis/dyanamic-sql.md "mention")
+📅 2025.05.26 [dyanamic-sql.md](persistance-framework/mybatis/dyanamic-sql.md "mention")
 
 📅 2025.05.27 스터디 프로젝트에 수업 내용을 추가해서 개선함[https://github.com/Yeram522/Java-Practice/commit/56aecbd6c801f3c8a32e0615f03172af8234e61b](https://github.com/Yeram522/Java-Practice/commit/56aecbd6c801f3c8a32e0615f03172af8234e61b)
 
-📅 2025.05.28  [undefined.md](etc/undefined.md "mention")
+📅 2025.05.28  [250530.md](etc/250530.md "mention")
+
+📅 2025.05.30 [request.md](servlet/request.md "mention")
 
 </details>
 

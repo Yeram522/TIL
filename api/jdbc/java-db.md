@@ -31,7 +31,7 @@ public static Connection getConnection(String url,
 
 그리고, 반환 값으로 Connection 객체를 받음으로써, 잘 연결 되었는지 확인할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% code title="✅ 드라이버 등록" %}
 ```java
@@ -41,7 +41,7 @@ Class.forName("com.mysql.cj.jdbc.Driver");
 
 `Class.forName()` 메서드를 이용해서 드라이버를 등록하는데, 아래 그림에 보이는 위치의 드라이버의 경로를 입력해서 등록할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 드라이버 등록을 한 후에, `DriverManager` 은 우리가 지정한 데이터베이스와    자바를 연결시키는데, 해당 드라이버를 build.gradle의 의존성에 추가해주어야지 `Class.getName()` 함수로 드라이버를 등록한 후 연결할 수 있다.
 

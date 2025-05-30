@@ -394,7 +394,7 @@ example
 <img src="sample/image/flower1.PNG" width="200px" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;✅가변 크기 단위 : 화면 사이즈 혹은 기준이 사이즈에 따라 크기 변경
 
@@ -402,7 +402,7 @@ example
 <img src="sample/image/flower1.PNG" width="15%" height="150px">
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
