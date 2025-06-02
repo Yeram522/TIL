@@ -88,6 +88,8 @@
   * [Request](servlet/request.md)
   * [Response](servlet/response.md)
   * [Exception Handler](servlet/exception-handler.md)
+  * [Forward & Redirect](servlet/forward-and-redirect.md)
+  * [Cookie & Session](servlet/cookie-and-session.md)
 
 ## Persistance Framework
 
