@@ -86,4 +86,6 @@ layout: landing
 
 📅 2025.06.03 [spring-core.md](spring-framework/spring-core.md "mention")
 
+📅 2025.06.04 [#id-2.-constructor](spring-framework/spring-core.md#id-2.-constructor "mention")
+
 </details>
