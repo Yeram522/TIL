@@ -324,7 +324,7 @@ public class BookService {
 }
 ```
 
-### 4️⃣ Annotation
+## 4️⃣ Annotation
 
 {% code title="✅ @Component 어노테이션으로 클래스를 bean으로 등록할 수 있다." %}
 ```java
@@ -369,4 +369,6 @@ public class PokemonService {
 ```java
 Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.ohgiraffers.section02.common.Pokemon' available: expected single matching bean but found 3: charmander,pikachu,squirtle
 ```
+
+## 5️⃣ Bean
 
