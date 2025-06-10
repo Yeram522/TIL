@@ -92,7 +92,9 @@ layout: landing
 
 📅 2025.06.06 [handler-method.md](spring-boot/handler-method.md "mention")
 
-📅 2025.06.09 [view-resolver.md](spring-boot/view-resolver.md "mention")
+📅 2025.06.09  Exception Hanlder 실습 [https://github.com/BOA-with-elephant/spring-exception-handler/issues/2](https://github.com/BOA-with-elephant/spring-exception-handler/issues/2)
+
+📅 2025.06.10
 
 </details>
 
