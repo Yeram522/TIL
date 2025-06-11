@@ -94,7 +94,9 @@ layout: landing
 
 📅 2025.06.09  Exception Hanlder 실습 [https://github.com/BOA-with-elephant/spring-exception-handler/issues/2](https://github.com/BOA-with-elephant/spring-exception-handler/issues/2)
 
-📅 2025.06.10
+📅 2025.06.10 Thymeleaf 문법 정리 [https://odlram.tistory.com/entry/Thymeleaf-%EB%AC%B8%EB%B2%95](https://odlram.tistory.com/entry/Thymeleaf-%EB%AC%B8%EB%B2%95)
+
+📅 2025.06.11 어노테이션 비교 정리 [https://odlram.tistory.com/entry/PathVariable-vs-RequestParam-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C](https://odlram.tistory.com/entry/PathVariable-vs-RequestParam-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 </details>
 
