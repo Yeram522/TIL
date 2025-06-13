@@ -98,5 +98,7 @@ layout: landing
 
 📅 2025.06.11 어노테이션 비교 정리 [https://odlram.tistory.com/entry/PathVariable-vs-RequestParam-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C](https://odlram.tistory.com/entry/PathVariable-vs-RequestParam-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
+📅 2025.06.13  미니프로젝트 실습 공부 [https://odlram.tistory.com/manage/posts/](https://odlram.tistory.com/manage/posts/)
+
 </details>
 
