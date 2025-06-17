@@ -107,6 +107,8 @@
   * [Request Mapping](spring-boot/request-mapping.md)
   * [Handler Method](spring-boot/handler-method.md)
   * [View Resolver](spring-boot/view-resolver.md)
+* [Spring Security](spring-security.md)
+* [JPA](jpa.md)
 
 ## ETC
 
