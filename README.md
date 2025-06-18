@@ -102,5 +102,7 @@ layout: landing
 📅 2025.06.16 [spring-security.md](spring-security.md "mention")\
 📅 2025.06.17  [jpa.md](jpa.md "mention")
 
+📅 2025.06.18 [#id-5.-persistence-context](jpa.md#id-5.-persistence-context "mention")
+
 </details>
 

@@ -39,7 +39,7 @@ USE mysql;
 SELECT * FROM USER;
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. 데이터베이스 생성 후 계정에 권한 부여
 

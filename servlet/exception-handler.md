@@ -1,6 +1,6 @@
 # Exception Handler
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 에러가 발생하면 톰캣이 자동으로 request에 에러 정보를 추가하기 때문에, 우리는 아래처럼 request에서 에러 정보를 받아올 수 있다.
 

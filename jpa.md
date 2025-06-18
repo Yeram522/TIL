@@ -55,3 +55,86 @@ JPA는 엔티티를 저장하는 환경인 영속성 컨텍스트(Persistence Co
 
 * 엔티티 매니저가 엔티티를 저장하는 공간으로 엔티티를 보관하고 관리한다.
 * 엔티티 매니저가 생성될 때 하나의 영속성 컨텍스트가 만들어 진다.
+
+## 5. Persistence Context
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**Persistence Context**는 엔티티를 영구 저장하는 환경으로, 엔티티 매니저를 통해 엔티티를 저장하거나 조회하면 해당 엔티티는 영속성 컨텍스트에 보관되고 관리됩니다.
+
+### 1. 엔티티의 생명주기
+
+```
+비영속(new/transient) → 영속(managed) → 준영속(detached) → 삭제(removed)
+```
+
+### 2. 1차 캐시 (First Level Cache)
+
+#### 1차 캐시란?
+
+* **영속성 컨텍스트 내부에 있는 캐시**
+* Map\<Key, Value> 구조로 되어 있음
+* Key: @Id로 매핑한 식별자
+* Value: 해당 엔티티 인스턴스
+
+#### 1차 캐시의 동작 방식
+
+```java
+java// 엔티티를 영속성 컨텍스트에 저장 (1차 캐시에 저장됨)Member member = new Member();member.setId("member1");member.setUsername("회원1");em.persist(member);// 1차 캐시에서 조회 (SQL 쿼리 실행되지 않음)Member findMember = em.find(Member.class, "member1");
+```
+
+#### 1차 캐시의 이점
+
+1. **성능 향상**: 같은 트랜잭션 내에서 동일한 엔티티 조회 시 DB에 접근하지 않음
+2. **동일성 보장**: 같은 엔티티에 대해 항상 같은 인스턴스 반환
+3. **변경 감지**: 엔티티의 변경사항을 자동으로 감지
+
+#### 1차 캐시 조회 과정
+
+```
+1. em.find(Member.class, "member1") 호출2. 1차 캐시에서 엔티티 조회 시도3-1. 있으면: 1차 캐시에서 반환3-2. 없으면: 데이터베이스에서 조회 → 1차 캐시에 저장 → 반환
+```
+
+### 3. Flush (플러시)
+
+#### Flush란?
+
+**영속성 컨텍스트의 변경 내용을 데이터베이스에 반영하는 것**
+
+* 영속성 컨텍스트를 비우는 것이 아님
+* 변경 사항을 데이터베이스에 동기화하는 과정
+
+#### Flush 동작 과정
+
+1. **변경 감지 (Dirty Checking)**
+2. **수정된 엔티티를 쓰기 지연 SQL 저장소에 등록**
+3. **쓰기 지연 SQL 저장소의 쿼리를 데이터베이스에 전송**
+
+#### Flush 발생 시점
+
+```java
+java// 1. 직접 호출em.flush();// 2. 트랜잭션 커밋 시 자동 호출transaction.commit();// 3. JPQL 쿼리 실행 시 자동 호출List<Member> members = em.createQuery("select m from Member m", Member.class)                        .getResultList();
+```
+
+#### Flush 모드 설정
+
+```java
+java// AUTO: 커밋이나 쿼리 실행 시 플러시 (기본값)em.setFlushMode(FlushModeType.AUTO);// COMMIT: 커밋할 때만 플러시em.setFlushMode(FlushModeType.COMMIT);
+```
+
+### 4. Commit (커밋)
+
+#### Commit이란?
+
+**트랜잭션의 변경 사항을 데이터베이스에 영구적으로 반영하는 것**
+
+#### Commit 과정
+
+```java
+javaEntityTransaction transaction = em.getTransaction();transaction.begin(); // 트랜잭션 시작// 엔티티 등록Member member = new Member("member1", "회원1");em.persist(member);// 엔티티 수정member.setUsername("수정된회원1");transaction.commit(); // 트랜잭션 커밋
+```
+
+#### Commit 시 내부 동작
+
+1. **Flush 자동 호출**
+2. **실제 데이터베이스 트랜잭션 커밋**
