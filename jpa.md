@@ -138,3 +138,145 @@ javaEntityTransaction transaction = em.getTransaction();transaction.begin(); // 
 
 1. **Flush 자동 호출**
 2. **실제 데이터베이스 트랜잭션 커밋**
+
+## 6. Mapping
+
+### 1. 기본 매핑 어노테이션
+
+#### @Entity와 @Table&#x20;
+
+```java
+@Entity
+@Table(name="users") // 테이블명 지정
+public class User{
+    // ...
+}
+```
+
+#### @ID와 기본키 생성 전략(Strategy)
+
+```java
+@Entity
+public class User{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //AUTO_INCREMENT
+    private Long id;
+```
+
+### 2. 컬럼 매핑
+
+#### @Column\`
+
+```java
+@Entity
+public class User {
+    @Column(name = "user_name", nullable = false, length = 50)
+    private String username;
+    
+    @Column(unique = true)
+    private String email;
+    
+    @Column(columnDefinition = "TEXT")
+    private String description;
+}
+```
+
+### 3. 연관관계 매핑
+
+#### 일대일(One-to-One)
+
+```java
+// 주 테이블에 외래키
+@Entity
+public class User {
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "profile_id")
+    private Profile profile;
+}
+
+@Entity
+public class Profile {
+    @OneToOne(mappedBy = "profile")
+    private User user;
+}
+```
+
+#### 다대일(Many-to-One) / 일대다(One-to-Many)
+
+```java
+// 다대일 (외래키를 가진 쪽)
+@Entity
+public class Order {
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+}
+
+// 일대다 (외래키를 가지지 않은 쪽)
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Order> orders = new ArrayList<>();
+}
+```
+
+✅ Cascade Type\
+`CascadeType.ALL`  : 모든 영속성 연산이 전이된다.
+
+```java
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Order> orders = new ArrayList<>();
+}
+
+// 사용 예시
+User user = new User();
+Order order1 = new Order();
+Order order2 = new Order();
+user.addOrder(order1); // 연관관계 편의 메서드
+user.addOrder(order2);
+
+em.persist(user); // user와 함께 order1, order2도 자동으로 저장됨
+em.remove(user);  // user와 함께 order1, order2도 자동으로 삭제됨
+```
+
+`CascadeType.PERSIST` : 저장 시에만 전이된다.
+
+```java
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
+    private List<Order> orders = new ArrayList<>();
+}
+
+User user = new User();
+user.addOrder(new Order());
+
+em.persist(user); // order도 함께 저장됨
+em.remove(user);  // order는 삭제되지 않음 (PERSIST만 전이)
+```
+
+`CascadeType.MERGE` : 병합 시에만 전이된다.
+
+```java
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user", cascade = CascadeType.MERGE)
+    private List<Order> orders = new ArrayList<>();
+}
+
+// 준영속 상태의 엔티티를 다시 영속 상태로 만들 때
+User detachedUser = // ... 준영속 상태의 user
+User mergedUser = em.merge(detachedUser); // order들도 함께 병합됨
+```
+
+✅ Fetch Type
+
+`FetchType.EAGER`  : 즉시 로딩
+
+엔티티를 조회할 때 연관된 엔티티도 함께 조회한다.
+
+`FetchType.LAZY`  : 지연 로딩
+
+실제 사용될 때까지 로딩을 지연시킨다.
