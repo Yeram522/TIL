@@ -106,7 +106,7 @@ layout: landing
 
 📅 2025.06.19  [#id-6.-mapping](jpa.md#id-6.-mapping "mention")
 
-📅 2025.06.20&#x20;
+📅 2025.06.20 [#id-7.-jpql-java-persistence-query-language](jpa.md#id-7.-jpql-java-persistence-query-language "mention")
 
 </details>
 
