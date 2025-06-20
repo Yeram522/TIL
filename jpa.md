@@ -280,3 +280,324 @@ User mergedUser = em.merge(detachedUser); // order들도 함께 병합됨
 `FetchType.LAZY`  : 지연 로딩
 
 실제 사용될 때까지 로딩을 지연시킨다.
+
+
+
+## 7. JPQL(Java Persistence Query Language)&#x20;
+
+### 1. 기본 JPQL - TypedQuery 사용
+
+#### 개념
+
+* JPQL은 JPA에서 제공하는 객체지향 쿼리 언어
+* SQL과 유사하지만 엔티티 객체를 대상으로 쿼리를 작성
+* TypedQuery는 타입 안전성을 보장하는 쿼리 인터페이스
+
+#### 코드 예시
+
+```java
+public String selectSingleMenuByTypedQuery(){
+    String jpql = "SELECT m.menuName FROM Section01Menu as m WHERE m.menuCode = 8";
+    TypedQuery<String> query = entityManager.createQuery(jpql, String.class);
+    String resultMenuName = query.getSingleResult();
+    
+    return resultMenuName;
+}
+```
+
+#### 주요 특징
+
+* **TypedQuery**: 반환 타입을 명시하여 컴파일 타임에 타입 체크
+* **getSingleResult()**: 정확히 하나의 결과만 반환 (0개 또는 2개 이상이면 예외 발생)
+* **getResultList()**: 여러 개의 결과를 List로 반환
+* **별칭(alias) 사용**: `Section01Menu as m` - 쿼리 작성을 간편하게 함
+
+***
+
+### 2. 매개변수 바인딩 JPQL
+
+#### 개념
+
+* 동적으로 값을 전달받아 쿼리를 실행하는 방식
+* SQL Injection 공격을 방지하고 쿼리 재사용성을 높임
+* 위치 기반 매개변수(?1, ?2, ...)와 이름 기반 매개변수(:paramName) 지원
+
+#### 코드 예시
+
+```java
+public List<Menu> selectMenuBybindingPosition(String menuName){
+    String jpql = "SELECT m FROM Section02Menu m WHERE m.menuName = ?1";
+    List<Menu> resultMenuList = entityManager.createQuery(jpql, Menu.class)
+            .setParameter(1, menuName)
+            .getResultList();
+    return resultMenuList;
+}
+```
+
+#### 주요 특징
+
+* **위치 기반 매개변수**: `?1`, `?2` 순서대로 번호 매김
+* **setParameter()**: 매개변수 값을 바인딩
+* **메소드 체이닝**: 여러 메소드를 연속으로 호출 가능
+* **타입 안전성**: Menu.class로 반환 타입 명시
+
+#### SQL Injection 방지
+
+**SQL Injection**은 악의적인 사용자가 입력값을 통해 SQL 쿼리를 조작하여 데이터베이스를 공격하는 기법입니다.
+
+**위험한 방식 (문자열 연결)**
+
+```java
+// 절대 사용하면 안 되는 방식!
+String jpql = "SELECT m FROM Menu m WHERE m.menuName = '" + menuName + "'";
+// 만약 menuName = "'; DROP TABLE Menu; --" 라면?
+// 실제 쿼리: SELECT m FROM Menu m WHERE m.menuName = ''; DROP TABLE Menu; --'
+```
+
+**안전한 방식 (매개변수 바인딩)**
+
+```java
+// 안전한 방식
+String jpql = "SELECT m FROM Menu m WHERE m.menuName = ?1";
+query.setParameter(1, menuName); // JPA가 자동으로 이스케이프 처리
+```
+
+**매개변수 바인딩의 보안 장점:**
+
+* JPA가 자동으로 특수문자를 이스케이프 처리
+* 사용자 입력값이 쿼리 구조를 변경할 수 없음
+* PreparedStatement 사용으로 SQL 파싱 최적화
+
+#### 이름 기반 매개변수 예시
+
+```java
+// 이름 기반 매개변수 사용법
+String jpql = "SELECT m FROM Menu m WHERE m.menuName = :menuName";
+List<Menu> results = entityManager.createQuery(jpql, Menu.class)
+        .setParameter("menuName", menuName)
+        .getResultList();
+```
+
+***
+
+### 3. Projection (프로젝션)
+
+#### 개념
+
+**Projection**은 SELECT 절에서 조회할 대상을 지정하는 것을 의미합니다. 전체 엔티티가 아닌 필요한 데이터만 선택적으로 조회할 수 있는 기능입니다.
+
+#### Projection의 4가지 종류
+
+**1. 스칼라 프로젝션 (Scalar Projection)**
+
+**개념**: 기본 데이터 타입(String, Integer, Long 등)을 직접 조회
+
+```java
+// 단일 컬럼 조회
+"SELECT m.menuName FROM Menu m"
+
+// 여러 컬럼 조회 (Object[] 반환)
+"SELECT m.menuName, m.menuPrice FROM Menu m"
+TypedQuery<Object[]> query = em.createQuery(jpql, Object[].class);
+```
+
+**특징**:
+
+* 가장 빠른 성능 (필요한 컬럼만 조회)
+* 영속성 컨텍스트 관리 대상 아님
+* 단순한 데이터 조회에 적합
+
+**2. 엔티티 프로젝션 (Entity Projection)**
+
+**개념**: JPA 엔티티 객체 전체를 조회
+
+```java
+"SELECT m FROM Menu m"
+TypedQuery<Menu> query = em.createQuery(jpql, Menu.class);
+```
+
+**특징**:
+
+* 모든 컬럼을 조회 (성능상 불리할 수 있음)
+* 영속성 컨텍스트에서 관리됨 (변경 감지, 지연 로딩 등 가능)
+* CRUD 작업이 필요한 경우에 사용
+
+**3. 임베디드 타입 프로젝션 (Embedded Type Projection)**
+
+**개념**: @Embeddable로 정의된 값 타입 객체를 조회
+
+```java
+@Embeddable
+public class Address {
+    private String city;
+    private String street;
+    private String zipcode;
+}
+
+// 임베디드 타입 조회
+"SELECT m.address FROM Member m"
+```
+
+**특징**:
+
+* 복합키 용도가 아닌 **값 타입 집합**을 표현
+* 주소, 좌표, 기간 등 관련된 데이터를 하나로 묶어 재사용
+* 영속성 컨텍스트 관리 대상 아님 (값 타입이므로)
+
+**4. 생성자 프로젝션 (Constructor Projection)**
+
+**개념**: new 명령어를 사용해 DTO 객체를 생성하며 조회
+
+```java
+// DTO 클래스
+public class MenuDTO {
+    private String menuName;
+    private int menuPrice;
+    
+    public MenuDTO(String menuName, int menuPrice) {
+        this.menuName = menuName;
+        this.menuPrice = menuPrice;
+    }
+}
+
+// JPQL에서 생성자 프로젝션 사용
+"SELECT new com.example.MenuDTO(m.menuName, m.menuPrice) FROM Menu m"
+```
+
+#### 코드 예시
+
+```java
+@Transactional
+public List<Menu> singleEntityProjection(){
+    List<Menu> menuList = projectionRepository.singleEntityProjection();
+    
+    // 영속성 컨텍스트에 관리되는 엔티티이므로 변경 감지 가능
+    menuList.get(0).setMenuName("맛있는 삼겹살");
+    
+    return menuList;
+}
+```
+
+#### 주요 특징
+
+* **엔티티 프로젝션**: 조회된 엔티티는 영속성 컨텍스트에 의해 관리됨
+* **변경 감지**: @Transactional 하에서 엔티티 변경 시 자동으로 UPDATE 쿼리 실행
+* **성능 최적화**: 필요한 컬럼만 조회하여 네트워크 비용과 메모리 사용량 절약
+
+#### 생성자 프로젝션을 사용하는 이유
+
+**DTO 사용의 장점**
+
+1. **성능 최적화**: 필요한 데이터만 조회하여 네트워크 비용과 메모리 사용량 절약
+2. **보안**: 민감한 정보를 제외하고 필요한 데이터만 노출
+3. **계층 분리**: 엔티티는 영속성 계층에서만 사용, DTO는 프레젠테이션 계층에서 사용
+4. **API 응답 최적화**: JSON 응답 시 불필요한 데이터 제외
+
+**실무 활용 예시**
+
+```java
+// 사용자 목록 조회 API - 비밀번호 등 민감 정보 제외
+"SELECT new com.example.UserDTO(u.id, u.username, u.email) FROM User u"
+
+// 대시보드용 통계 데이터
+"SELECT new com.example.SalesDTO(s.date, s.totalAmount, s.orderCount) FROM Sales s"
+
+// 검색 결과용 간단한 정보
+"SELECT new com.example.ProductSummaryDTO(p.name, p.price, p.thumbnailUrl) FROM Product p"
+```
+
+**4가지 프로젝션 비교표**
+
+| 프로젝션 타입  | 반환 타입           | 영속성 컨텍스트 관리 | 성능  | 사용 용도            |
+| -------- | --------------- | ----------- | --- | ---------------- |
+| **스칼라**  | 기본 타입/Object\[] | ❌           | ⭐⭐⭐ | 단순 데이터 조회, 통계    |
+| **엔티티**  | 엔티티 객체          | ✅           | ⭐   | CRUD 작업, 비즈니스 로직 |
+| **임베디드** | @Embeddable 객체  | ❌           | ⭐⭐  | 값 타입 집합 조회       |
+| **생성자**  | DTO 객체          | ❌           | ⭐⭐⭐ | API 응답, 화면 표시용   |
+
+#### 임베디드 타입 상세 설명
+
+임베디드 타입은 **복합키 용도가 아닌** 관련된 속성들을 하나의 값 타입으로 묶어서 재사용하는 목적입니다.
+
+```java
+@Entity
+public class Member {
+    @Id
+    private Long id;
+    
+    @Embedded
+    private Address homeAddress;  // 집 주소
+    
+    @Embedded
+    private Address workAddress;  // 직장 주소
+}
+
+@Embeddable
+public class Address {
+    private String city;
+    private String street;
+    private String zipcode;
+    
+    // 비즈니스 로직도 포함 가능
+    public String getFullAddress() {
+        return city + " " + street + " " + zipcode;
+    }
+}
+```
+
+**임베디드 타입의 장점:**
+
+* 코드 재사용성 향상
+* 응집도 높은 객체 설계
+* 의미 있는 메소드 추가 가능
+* 데이터베이스 테이블 구조는 그대로 유지
+
+***
+
+### 4. Paging (페이징)
+
+#### 개념
+
+대용량 데이터를 효율적으로 조회하기 위해 결과를 나누어 가져오는 기법입니다. 전체 데이터를 한 번에 로드하지 않고 필요한 만큼만 조회하여 메모리 사용량과 응답 시간을 최적화합니다.
+
+#### 코드 예시
+
+```java
+public List<Menu> usingPagingAPI(int offset, int limit){
+    String jpql = "SELECT m FROM Section04Menu m ORDER BY m.menuCode DESC";
+    List<Menu> pagingMenuList = entityManager.createQuery(jpql, Menu.class)
+            .setFirstResult(offset)  // 조회를 시작할 위치(0부터 시작)
+            .setMaxResults(limit)    // 조회할 데이터의 개수
+            .getResultList();
+    
+    return pagingMenuList;
+}
+```
+
+#### 주요 특징
+
+* **setFirstResult(offset)**: 조회 시작 위치 설정 (0-based index)
+* **setMaxResults(limit)**: 최대 조회할 레코드 수 제한
+* **ORDER BY**: 페이징 시 정렬 기준 필수 (일관된 결과를 위해)
+* **성능 최적화**: 데이터베이스 레벨에서 LIMIT/OFFSET 쿼리로 변환
+
+#### 페이징 계산 예시
+
+```java
+// 페이지 번호로 offset 계산
+int pageNumber = 2;  // 2페이지
+int pageSize = 10;   // 페이지당 10개
+int offset = (pageNumber - 1) * pageSize;  // offset = 10
+
+// 실제 사용
+List<Menu> page2Menus = usingPagingAPI(offset, pageSize);
+```
+
+#### 실무 활용 팁
+
+* **총 개수 조회**: 페이징과 함께 전체 데이터 개수도 조회하여 총 페이지 수 계산
+* **인덱스 활용**: ORDER BY 절에 사용되는 컬럼에 인덱스 생성 권장
+* **Spring Data JPA**: Pageable 인터페이스로 더 편리한 페이징 지원
+
+***
+
