@@ -599,5 +599,159 @@ List<Menu> page2Menus = usingPagingAPI(offset, pageSize);
 * **인덱스 활용**: ORDER BY 절에 사용되는 컬럼에 인덱스 생성 권장
 * **Spring Data JPA**: Pageable 인터페이스로 더 편리한 페이징 지원
 
+
+
+### 5. Group Functuon(그룹 함수)
+
+```java
+public Long otherWithNoResult(int categoryCode){
+    String jpql = "SELECT SUM(m.menuPrice) FROM Section05Menu m WHERE m.categoryCode = :categoryCode";
+    /* COUNT 외의 다른 그룹함수는 결과 값이 없을 경우 Null이 반환되기 때문에 기본 자료형으로 다를 경우 문제가 생긴다.
+     *  Long과 같이 Wrapper 클래스 자료형으로 다루어주어야 한다. */
+    Long sumOfMenu = entityManager.createQuery(jpql, Long.class)
+            .setParameter("categoryCode", categoryCode)
+            .getSingleResult();
+    return sumOfMenu;
+}
+```
+
+
+
+### 6. Join
+
+```java
+public List<Menu> selectByInnerJoin(){
+        String jpql = "SELECT m FROM Section06Menu m JOIN m.category c";
+        List<Menu> menuList = entityManager.createQuery(jpql, Menu.class).getResultList();
+
+        return menuList;
+    }
+
+    public List<Object[]> selectByOuterJoin(){
+        String jpql = "SELECT m.menuName , c.categoryName FROM Section06Menu m RIGHT JOIN m.category c" +
+                " ORDER BY m.category.categoryCode";
+
+        List<Object[]> menuList = entityManager.createQuery(jpql).getResultList();
+        return menuList;
+    }
+
+    public List<Menu> selectByFetchJoin(){
+        /* FETCH : JPQL 에서 성능 최적화를 위해 제공하는 기능으로 연과 된 엔티티나 컬렉션을 한번에 조회한다.
+        *  지연 로딩이 아닌 즉시 로등을 수행한다. */
+        String jpql = "SELECT m FROM Section06Menu m JOIN FETCH m.category c";
+
+        List<Menu> menuList = entityManager.createQuery(jpql, Menu.class).getResultList();
+        return menuList;
+    }
+
+    public List<Object[]> selectByCollectionJoin(){
+        String jpql = "SELECT m.menuName , c.categoryName FROM Section06Category c RIGHT JOIN c.menuList m" +
+                " ORDER BY m.category.categoryCode";
+
+        List<Object[]> categoryList = entityManager.createQuery(jpql).getResultList();
+        return categoryList;
+    }
+```
+
 ***
 
+## 8. Native Query
+
+### 1. Native Query 란?
+
+SQL 쿼리를 그대로 사용하는 것을 말한다. 이를 사용하면 ORM의 기능을 이용하면서도 SQL 쿼리도 활용할 수 있어서 더욱 강력한 데이터베이스 접근이 가능하다. 따라서 복잡한 쿼리를 작성할 때나, 특정 데이터베이스에서만 사용 가능한 기능을 사용해야할 때 등에 Native query를 사용한다.
+
+### 2. Native Query의 API 3가지
+
+#### 결과 타입 정의
+
+`public Query createNativeQuery(String sqlString, Class resultClass)`
+
+사용자 정의 타입으로 결과 타입을 정의 했을 때, 모든 칼럼값을 매핑하는 경우에만 타입을 특정할 수 있다. 일부 칼럼만 조회할 경우에는 Object\[]또는 스칼라 값을 별도로 담을 클래스를 정의해야한다.
+
+```java
+public Menu nativeQueryByResultType(int menuCode) {
+ String query
+ = "SELECT" +
+ " menu_code, menu_name, menu_price, category_code, orderable_status"
+ " FROM tbl_menu" +
+ " WHERE menu_code = ?";
+ Query nativeQuery
+ = manager.createNativeQuery(query, Menu.class)
+ .setParameter(1, menuCode);
+ return (Menu) nativeQuery.getSingleResult();
+}
+```
+
+#### 결과 타입을 정의할 수 없을 때
+
+`public Query createNativeQuery(String sqlString)`
+
+엔티티의 일부 컬럼만 조회할 경우 결과 타입을 특정할 수 없으므로 Object\[] 타입을 사용한다.
+
+```java
+public List<Object[]> nativeQueryByNoResultType() {
+ String query = "SELECT menu_name, menu_price FROM tbl_menu";
+ return manager.createNativeQuery(query).getResultList();
+}
+```
+
+#### 결과 매핑 사용
+
+`public Query createNativeQuery(String sqlString, String resultsetMapping)`
+
+다른 엔터티와 함께 조회하고 싶을 때는 `@SqlResultSetMapping` 어노테이션을 이용해 네이티브 쿼리의 결과를 매핑할 수 있다.
+
+```java
+@SqlResultSetMappings(
+value=
+ {
+ /* 자동 엔티티 매핑 : @Column으로 매핑 설정이 되어 있는 경우 사용 */
+@SqlResultSetMapping(
+// 결과 매핑 이름
+name = "categoryCountAutoMapping",
+// @EntityResult를 사용해서 엔티티를 결과로 매핑
+entities = {@EntityResult(entityClass = Category.class)},
+// @ColumnResult를 사용해서 컬럼을 결과로 매핑
+columns = {@ColumnResult(name = "menu_count")}
+)
+}
+)
+```
+
+```java
+public List<Object[]> nativeQueryByAutoMapping() {
+ String query
+ = "SELECT a.category_code, a.category_name, a.ref_category_code," +
+ " COALESCE(v.menu_count, 0) menu_count" +
+ " FROM tbl_category a" +
+ " LEFT JOIN (SELECT COUNT(*) AS menu_count, b.category_code" +
+ " FROM tbl_menu b" +
+ " GROUP BY b.category_code) v ON (a.category_code = v.category_code)" +
+ " ORDER BY 1";
+  Query nativeQuery
+ = manager.createNativeQuery(query, "categoryCountAutoMapping");
+ return nativeQuery.getResultList();
+}
+```
+
+```java
+@DisplayName("자동 결과 매핑을 사용한 Native Query 조회 테스트")
+@Test
+public void testNativeQueryByAutoMapping() {
+ //given
+ //when
+ List<Object[]> categoryList
+ = nativeQueryRepository.nativeQueryByAutoMapping();
+ //then
+ Assertions.assertNotNull(categoryList);
+ categoryList.forEach(
+ row -> {
+ for(Object col : row) {
+ System.out.print(col + "/");
+ }
+ System.out.println();
+ }
+ );
+}
+```
