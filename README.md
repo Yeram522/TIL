@@ -114,5 +114,7 @@ layout: landing
 
 📅 2025.06.27  [iteration.md](etc/react/iteration.md "mention")
 
+📅 2025.06.30 [async.md](etc/react/async.md "mention")
+
 </details>
 
