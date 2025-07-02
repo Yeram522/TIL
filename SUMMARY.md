@@ -115,5 +115,7 @@
 * [React](etc/react/README.md)
   * [React 개요](etc/react/react.md)
   * [Iteration](etc/react/iteration.md)
-  * [Async](etc/react/async.md)
+  * [Async](etc/react/async/README.md)
+    * [React 컴포넌트 분리와 API 호출](etc/react/async/react-api.md)
+  * [Route](etc/react/route.md)
 * [250530 취업 캠프](etc/250530.md)
