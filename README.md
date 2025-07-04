@@ -128,6 +128,6 @@ layout: landing
 
 📅 2025.07.03 [redux.md](etc/react/redux.md "mention")
 
-📅 2025.07.04 /
+📅 2025.07.04 [#id-8.-redux-actions](etc/react/redux.md#id-8.-redux-actions "mention")
 
 </details>
