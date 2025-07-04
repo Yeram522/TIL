@@ -126,4 +126,6 @@ layout: landing
 
 📅 2025.07.02  [route.md](etc/react/route.md "mention")
 
+📅 2025.07.03 [redux.md](etc/react/redux.md "mention")
+
 </details>

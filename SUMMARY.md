@@ -118,4 +118,5 @@
   * [Async](etc/react/async/README.md)
     * [React 컴포넌트 분리와 API 호출](etc/react/async/react-api.md)
   * [Route](etc/react/route.md)
+  * [Redux](etc/react/redux.md)
 * [250530 취업 캠프](etc/250530.md)
