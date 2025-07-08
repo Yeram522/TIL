@@ -130,4 +130,6 @@ layout: landing
 
 📅 2025.07.04 [#id-8.-redux-actions](etc/react/redux.md#id-8.-redux-actions "mention")
 
+📅 2025.07.07 \[프로젝트공부정리]\([https://github.com/BOA-with-elephant/Header-backend/wiki/About-DataBase-INDEX](https://github.com/BOA-with-elephant/Header-backend/wiki/About-DataBase-INDEX))
+
 </details>
