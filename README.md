@@ -132,4 +132,6 @@ layout: landing
 
 📅 2025.07.07 \[프로젝트공부정리]\([https://github.com/BOA-with-elephant/Header-backend/wiki/About-DataBase-INDEX](https://github.com/BOA-with-elephant/Header-backend/wiki/About-DataBase-INDEX))
 
+📅 2025.07.09 \[프로젝트공부정리]\([https://velog.io/@damgomgom/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90%EC%9D%98-JPA-%EC%A1%B0%ED%9A%8C-%EC%A0%84%EB%9E%B5-%EC%84%A0%ED%83%9D%EA%B8%B0-Entity-vs-DTO-vs-Interface-Projection](https://velog.io/@damgomgom/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90%EC%9D%98-JPA-%EC%A1%B0%ED%9A%8C-%EC%A0%84%EB%9E%B5-%EC%84%A0%ED%83%9D%EA%B8%B0-Entity-vs-DTO-vs-Interface-Projection))
+
 </details>
