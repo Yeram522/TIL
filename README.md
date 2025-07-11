@@ -134,4 +134,6 @@ layout: landing
 
 📅 2025.07.09 \[프로젝트공부정리]\([https://velog.io/@damgomgom/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90%EC%9D%98-JPA-%EC%A1%B0%ED%9A%8C-%EC%A0%84%EB%9E%B5-%EC%84%A0%ED%83%9D%EA%B8%B0-Entity-vs-DTO-vs-Interface-Projection](https://velog.io/@damgomgom/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90%EC%9D%98-JPA-%EC%A1%B0%ED%9A%8C-%EC%A0%84%EB%9E%B5-%EC%84%A0%ED%83%9D%EA%B8%B0-Entity-vs-DTO-vs-Interface-Projection))
 
+📅 2025.07.11 \[프로젝트공부정리]\([https://velog.io/@damgomgom/%EC%B2%AB-%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%8F%84%EC%A0%84%EA%B8%B0-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%BF%BC%EB%A6%AC%EC%97%90%EC%84%9C-Pagination%EA%B9%8C%EC%A7%80](https://velog.io/@damgomgom/%EC%B2%AB-%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%8F%84%EC%A0%84%EA%B8%B0-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%BF%BC%EB%A6%AC%EC%97%90%EC%84%9C-Pagination%EA%B9%8C%EC%A7%80))
+
 </details>
