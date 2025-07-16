@@ -136,4 +136,10 @@ layout: landing
 
 📅 2025.07.11 \[프로젝트공부정리]\([https://velog.io/@damgomgom/%EC%B2%AB-%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%8F%84%EC%A0%84%EA%B8%B0-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%BF%BC%EB%A6%AC%EC%97%90%EC%84%9C-Pagination%EA%B9%8C%EC%A7%80](https://velog.io/@damgomgom/%EC%B2%AB-%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%8F%84%EC%A0%84%EA%B8%B0-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%BF%BC%EB%A6%AC%EC%97%90%EC%84%9C-Pagination%EA%B9%8C%EC%A7%80))
 
+📅 2025.07.14 \[프로젝트개발일지]\([https://yeram-info.notion.site/COOLSMS-23039eac3dce806db1fffea44a2359e8?pvs=74](https://yeram-info.notion.site/COOLSMS-23039eac3dce806db1fffea44a2359e8?pvs=74))
+
+📅 2025.07.15 \[프로젝트공부정리]\([https://yeram-info.notion.site/WebClient-23039eac3dce80cc8752d87e36386980?source=copy\_link](https://yeram-info.notion.site/WebClient-23039eac3dce80cc8752d87e36386980?source=copy_link))
+
+📅 2025.07.16 \[프로젝트개발일지]\([https://yeram-info.notion.site/Spring-Boot-API-23239eac3dce80a9bde2c9ba3a801c00?source=copy\_link](https://yeram-info.notion.site/Spring-Boot-API-23239eac3dce80a9bde2c9ba3a801c00?source=copy_link))
+
 </details>
