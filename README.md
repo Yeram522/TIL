@@ -141,6 +141,7 @@ layout: landing
 📅 2025.07.15 \[프로젝트공부정리]\([https://yeram-info.notion.site/WebClient-23039eac3dce80cc8752d87e36386980?source=copy\_link](https://yeram-info.notion.site/WebClient-23039eac3dce80cc8752d87e36386980?source=copy_link))
 
 📅 2025.07.16 \[프로젝트개발일지]\([https://yeram-info.notion.site/Spring-Boot-API-23239eac3dce80a9bde2c9ba3a801c00?source=copy\_link](https://yeram-info.notion.site/Spring-Boot-API-23239eac3dce80a9bde2c9ba3a801c00?source=copy_link))\
-📅 2025.07.17 \[프로젝트개발일지]\([https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74](https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74))
+📅 2025.07.17 \[프로젝트개발일지]\([https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74](https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74))\
+📅 2025.07.21 \[프로젝트개발일지]\([https://yeram-info.notion.site/Spring-Boot-23739eac3dce80b3835ff8b40022fedb](https://yeram-info.notion.site/Spring-Boot-23739eac3dce80b3835ff8b40022fedb))
 
 </details>
