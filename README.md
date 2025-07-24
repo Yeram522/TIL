@@ -144,4 +144,9 @@ layout: landing
 📅 2025.07.17 \[프로젝트개발일지]\([https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74](https://yeram-info.notion.site/20250717-23339eac3dce80cfada9e57123d08208?pvs=74))\
 📅 2025.07.21 \[프로젝트개발일지]\([https://yeram-info.notion.site/Spring-Boot-23739eac3dce80b3835ff8b40022fedb](https://yeram-info.notion.site/Spring-Boot-23739eac3dce80b3835ff8b40022fedb))
 
+📅 2025.07.22\[프로젝트개발일지]\([https://yeram-info.notion.site/RequestMapping-Refactoring-23839eac3dce806ab9eed95fce0c1ccd?pvs=74](https://yeram-info.notion.site/RequestMapping-Refactoring-23839eac3dce806ab9eed95fce0c1ccd?pvs=74))\
+📅2025.07.23\[발표관련공부]\([https://yeram-info.notion.site/23939eac3dce80ff9186e1896b8855ab?pvs=74](https://yeram-info.notion.site/23939eac3dce80ff9186e1896b8855ab?pvs=74))
+
+📅2025.07.24\[발표관련준비]\([https://yeram-info.notion.site/23939eac3dce80b0854bde6354000273?pvs=74](https://yeram-info.notion.site/23939eac3dce80b0854bde6354000273?pvs=74))
+
 </details>
