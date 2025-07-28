@@ -10,6 +10,8 @@
 
 ## Language
 
+* [Python](language/python/README.md)
+  * [lambda 함수와 리스트 정렬 (sort())](language/python/lambda-sort.md)
 * [JavaScript](language/javascript/README.md)
   * [Core](language/javascript/core/README.md)
     * [1.  Variable](language/javascript/core/1.-variable.md)
@@ -120,3 +122,4 @@
   * [Route](etc/react/route.md)
   * [Redux](etc/react/redux.md)
 * [250530 취업 캠프](etc/250530.md)
+* [7/25 현업개발자 멘토링](etc/7-25.md)

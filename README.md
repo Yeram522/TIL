@@ -149,4 +149,8 @@ layout: landing
 
 📅2025.07.24\[발표관련준비]\([https://yeram-info.notion.site/23939eac3dce80b0854bde6354000273?pvs=74](https://yeram-info.notion.site/23939eac3dce80b0854bde6354000273?pvs=74))
 
+📅2025.07.25 [7-25.md](etc/7-25.md "mention")
+
+📅2025.07.28 [lambda-sort.md](language/python/lambda-sort.md "mention")
+
 </details>
