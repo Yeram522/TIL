@@ -114,6 +114,8 @@
 
 ## ETC
 
+* [LLM](etc/llm/README.md)
+  * [LangChain & Hugging Face](etc/llm/langchain-and-hugging-face.md)
 * [React](etc/react/README.md)
   * [React 개요](etc/react/react.md)
   * [Iteration](etc/react/iteration.md)

@@ -153,4 +153,21 @@ layout: landing
 
 📅2025.07.28 [lambda-sort.md](language/python/lambda-sort.md "mention")
 
+📅2025.07.29 \[코딩테스트과제]\([https://github.com/Yeram522/spring-security-login/pull/2](https://github.com/Yeram522/spring-security-login/pull/2))
+
+📅2025.07.30 \[코딩테스트과제]\([https://github.com/Yeram522/spring-security-login/pull/4](https://github.com/Yeram522/spring-security-login/pull/4))
+
+📅2025.07.31 \[코딩테스트과제]\([https://github.com/Yeram522/spring-security-login/pull/10](https://github.com/Yeram522/spring-security-login/pull/10))
+
 </details>
+
+<details>
+
+<summary>August</summary>
+
+📅2025.08.01 \[코딩테스트과제]\([https://github.com/Yeram522/spring-security-login/pull/22](https://github.com/Yeram522/spring-security-login/pull/22))
+
+📅2025.08.04 [langchain-and-hugging-face.md](etc/llm/langchain-and-hugging-face.md "mention")
+
+</details>
+
