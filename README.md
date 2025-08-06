@@ -169,5 +169,9 @@ layout: landing
 
 📅2025.08.04 [langchain-and-hugging-face.md](etc/llm/langchain-and-hugging-face.md "mention")
 
+📅2025.08.05 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/pull/24](https://github.com/Yeram522/spring-security-login/pull/24))
+
+📅2025.08.06 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/issues/25](https://github.com/Yeram522/spring-security-login/issues/25))
+
 </details>
 
