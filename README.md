@@ -173,5 +173,25 @@ layout: landing
 
 📅2025.08.06 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/issues/25](https://github.com/Yeram522/spring-security-login/issues/25))
 
+📅2025.08.11 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/issues/27](https://github.com/Yeram522/spring-security-login/issues/27))
+
+📅2025.08.12 \[코딩테스트과제고도화][https://github.com/Yeram522/spring-security-login/pull/26](https://github.com/Yeram522/spring-security-login/pull/26))
+
+📅2025.08.13 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/pull/26](https://github.com/Yeram522/spring-security-login/pull/26))
+
+📅2025.08.13 \[코딩테스트과제고도화]\([https://github.com/Yeram522/spring-security-login/pull/26](https://github.com/Yeram522/spring-security-login/pull/26))
+
+📅2025.08.18 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-Frontend/pull/107](https://github.com/BOA-with-elephant/Header-Frontend/pull/107))
+
+📅2025.08.19 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-backend/pull/219](https://github.com/BOA-with-elephant/Header-backend/pull/219))
+
+📅2025.08.20 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-backend/pull/222](https://github.com/BOA-with-elephant/Header-backend/pull/222))
+
+📅2025.08.21 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-backend/pull/222](https://github.com/BOA-with-elephant/Header-backend/pull/222))
+
+📅2025.08.22 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-Frontend/pull/121](https://github.com/BOA-with-elephant/Header-Frontend/pull/121))
+
+📅2025.08.25 \[LLM프로젝트]\([https://github.com/BOA-with-elephant/Header-backend/pull/253](https://github.com/BOA-with-elephant/Header-backend/pull/253))
+
 </details>
 
